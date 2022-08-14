@@ -1,0 +1,79 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Aug 14 11:03:58 2022
+;; Desktop file format version 208
+;; Emacs version 27.1
+
+;; Global section:
+(setq desktop-saved-frameset nil)
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '(#("indei" 0 5 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs" "~/.emacs-config/init-accelerate.el" "~/.emacs-config/init-eaf.el" "~/.emacs-config/init.el" "~/.emacs-config/.gitmodules" "~/linakesi_project/vue-project/src/main.ts" "~/.emacs-config/init-lsp-bridge.el" "~/linakesi_project/vue-project/src/App.vue"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/lbw/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(eldoc-mode subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
+  153
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 26135 904511 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/lbw/.emacs-config/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode text-scale-mode)
+  587
+  '(552 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 26135 617015 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (574 266 75 577 36 20 36 1 1771 615 1771 1 1771 1 1771 1))))
+
+(desktop-create-buffer 208
+  "/Users/lbw/.emacs-config/init-eaf.el"
+  "init-eaf.el"
+  'emacs-lisp-mode
+  '(eldoc-mode subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
+  396
+  '(396 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 26134 849037 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (133 37 16 15 37))))
+
+(desktop-create-buffer 208
+  "/Users/lbw/linakesi_project/vue-project/src/main.ts"
+  "main.ts"
+  'typescript-mode
+  '(subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 24495 880706 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/lbw/linakesi_project/vue-project/src/App.vue"
+  "App.vue"
+  'web-mode
+  '(subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode prettier-js-mode yas-minor-mode)
+  1
+  '(78 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 24495 328629 0) (buffer-file-coding-system . utf-8-unix) (case-fold-search . t))
+  '((mark-ring (26 1453 1 1453 26 1453 1))))
+

@@ -1,0 +1,108 @@
+[submodule "sdcv"]
+	path = site-lisp/extensions/sdcv
+	url = https://github.com/manateelazycat/sdcv.git
+[submodule "lazy-load"]
+	path = site-lisp/extensions/lazy-load
+	url = https://github.com/manateelazycat/lazy-load.git
+[submodule "aweshell"]
+	path = site-lisp/extensions/aweshell
+	url = https://github.com/manateelazycat/aweshell.git
+[submodule "auto-save"]
+	path = site-lisp/extensions/auto-save
+	url = https://github.com/manateelazycat/auto-save.git
+[submodule "awesome-pair"]
+	path = site-lisp/extensions/awesome-pair
+	url = https://github.com/manateelazycat/awesome-pair.git
+[submodule "awesome-tab"]
+	path = site-lisp/extensions/awesome-tab
+	url = https://github.com/manateelazycat/awesome-tab.git
+[submodule "posframe"]
+	path = site-lisp/extensions/posframe
+	url = https://github.com/tumashu/posframe.git
+[submodule "olivetti"]
+	path = site-lisp/extensions/olivetti
+	url = https://github.com/rnkn/olivetti.git
+[submodule "web-mode"]
+	path = site-lisp/extensions/web-mode
+	url = https://github.com/fxbois/web-mode.git
+[submodule "Indium"]
+	path = site-lisp/extensions/Indium
+	url = https://github.com/NicolasPetton/Indium.git
+[submodule "instant-rename-tag"]
+	path = site-lisp/extensions/instant-rename-tag
+	url = https://github.com/manateelazycat/instant-rename-tag.git
+[submodule "highlight-matching-tag"]
+	path = site-lisp/extensions/highlight-matching-tag
+	url = https://github.com/manateelazycat/highlight-matching-tag.git
+[submodule "js2-refactor"]
+	path = site-lisp/extensions/js2-refactor
+	url = https://github.com/js-emacs/js2-refactor.el.git
+[submodule "one-key"]
+	path = site-lisp/extensions/one-key
+	url = https://github.com/manateelazycat/one-key.git
+[submodule "watch-other-window"]
+	path = site-lisp/extensions/watch-other-window
+	url = https://github.com/manateelazycat/watch-other-window.git
+[submodule "expand-region"]
+	path = site-lisp/extensions/expand-region
+	url = https://github.com/magnars/expand-region.el.git
+[submodule "tide"]
+	path = site-lisp/extensions/tide
+	url = https://github.com/ananthakumaran/tide.git
+[submodule "cache-path-from-shell"]
+	path = site-lisp/extensions/cache-path-from-shell
+	url = https://github.com/manateelazycat/cache-path-from-shell.git
+[submodule "editorconfig-emacs"]
+	path = site-lisp/extensions/editorconfig-emacs
+	url = https://github.com/editorconfig/editorconfig-emacs.git
+[submodule "prettier-emacs"]
+	path = site-lisp/extensions/prettier-emacs
+	url = https://github.com/prettier/prettier-emacs.git
+[submodule "typescript-mode"]
+	path = site-lisp/extensions/typescript-mode
+	url = https://github.com/emacs-typescript/typescript.el.git
+[submodule "flycheck"]
+	path = site-lisp/extensions/flycheck
+	url = https://github.com/flycheck/flycheck.git
+[submodule "flycheck-posframe"]
+	path = site-lisp/extensions/flycheck-posframe
+	url = https://github.com/alexmurray/flycheck-posframe.git
+[submodule "s"]
+	path = site-lisp/extensions/s
+	url = https://github.com/magnars/s.el.git
+[submodule "js2-mode"]
+	path = site-lisp/extensions/js2-mode
+	url = https://github.com/mooz/js2-mode.git
+[submodule "dash"]
+	path = site-lisp/extensions/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "multiple-cursors"]
+	path = site-lisp/extensions/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "yasnippet"]
+	path = site-lisp/extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "popweb"]
+	path = site-lisp/extensions/popweb
+	url = https://github.com/manateelazycat/popweb.git
+[submodule "lsp-bridge"]
+	path = site-lisp/extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge.git
+[submodule "markdown-mode"]
+	path = site-lisp/extensions/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode.git
+[submodule "spinner"]
+	path = site-lisp/extensions/spinner
+	url = https://github.com/Malabarba/spinner.el.git
+[submodule "ht"]
+	path = site-lisp/extensions/ht
+	url = https://github.com/Wilfred/ht.el.git
+[submodule "json-mode"]
+	path = site-lisp/extensions/json-mode
+	url = https://github.com/joshwnj/json-mode
+[submodule "json-snatcher"]
+	path = site-lisp/extensions/json-snatcher
+	url = https://github.com/Sterlingg/json-snatcher
+[submodule "extensions/emacs-application-framework"]
+	path = site-lisp/extensions/emacs-application-framework
+	url = https://github.com/emacs-eaf/emacs-application-framework
