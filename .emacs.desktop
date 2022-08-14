@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Aug 14 11:03:58 2022
+;; Created Sun Aug 14 16:32:55 2022
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -11,69 +11,69 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("indei" 0 5 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq search-ring '(#("y" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("ini" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("indei" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs" "~/.emacs-config/init-accelerate.el" "~/.emacs-config/init-eaf.el" "~/.emacs-config/init.el" "~/.emacs-config/.gitmodules" "~/linakesi_project/vue-project/src/main.ts" "~/.emacs-config/init-lsp-bridge.el" "~/linakesi_project/vue-project/src/App.vue"))
+(setq file-name-history '("~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-session.el" "~/github_project/other/lazycat-emacs/.gitmodules" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/.emacs.d/site-lisp/config/init-session.el" "~/.emacs.d/site-lisp/config/init-fullscreen.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-generic.el" "~/.emacs.d/site-lisp/config/init-generic.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-fullscreen.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-font.el" "~/.emacs.d/site-lisp/config/init-font.el" "~/.emacs.d/site-lisp/config/init-line-number.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-auto-save.el" "~/.emacs.d/site-lisp/config/init-auto-save.el" "~/.emacs.d/init.el" "~/.emacs" "~/.emacs-config/init-accelerate.el" "~/.emacs-config/init-eaf.el" "~/.emacs-config/init.el" "~/.emacs-config/.gitmodules" "~/linakesi_project/vue-project/src/main.ts" "~/.emacs-config/init-lsp-bridge.el" "~/linakesi_project/vue-project/src/App.vue"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/Users/lbw/.emacs"
-  ".emacs"
+  "/Users/lbw/.emacs.d/site-lisp/config/init.el"
+  "init.el"
   'emacs-lisp-mode
-  '(eldoc-mode subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
-  153
-  '(1 nil)
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
+  504
+  '(nil nil)
   nil
   nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 26135 904511 0) (buffer-file-coding-system . utf-8-unix))
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45854 690892 0) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/Users/lbw/.emacs-config/init.el"
+  "/Users/lbw/.emacs.d/init.el"
   "init.el"
   'emacs-lisp-mode
-  '(eldoc-mode subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode text-scale-mode)
-  587
-  '(552 nil)
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
+  161
+  '(nil nil)
   nil
   nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 26135 617015 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (574 266 75 577 36 20 36 1 1771 615 1771 1 1771 1 1771 1))))
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45846 692539 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/Users/lbw/.emacs-config/init-eaf.el"
-  "init-eaf.el"
+  "/Users/lbw/github_project/other/lazycat-emacs/site-lisp/config/init-session.el"
+  "init-session.el"
   'emacs-lisp-mode
-  '(eldoc-mode subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
-  396
-  '(396 nil)
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
+  55
+  '(nil nil)
   nil
   nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 26134 849037 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (133 37 16 15 37))))
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45833 115027 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/Users/lbw/linakesi_project/vue-project/src/main.ts"
-  "main.ts"
-  'typescript-mode
-  '(subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
+  "/Users/lbw/github_project/other/lazycat-emacs/.gitmodules"
+  ".gitmodules"
+  'fundamental-mode
+  '(subword-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
+  146
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45713 947855 933000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/lbw/github_project/other/lazycat-emacs/site-lisp/config/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
   1
   '(nil nil)
   nil
   nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 24495 880706 0) (buffer-file-coding-system . utf-8-unix))
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45601 769666 933000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/lbw/linakesi_project/vue-project/src/App.vue"
-  "App.vue"
-  'web-mode
-  '(subword-mode lsp-bridge-mode highlight-parentheses-mode editorconfig-mode prettier-js-mode yas-minor-mode)
-  1
-  '(78 nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 24495 328629 0) (buffer-file-coding-system . utf-8-unix) (case-fold-search . t))
-  '((mark-ring (26 1453 1 1453 26 1453 1))))
 

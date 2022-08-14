@@ -1,38 +1,6 @@
-;; init-startup
-(tool-bar-mode -1)                      ;禁用工具栏
-(menu-bar-mode -1)                      ;禁用菜单栏
-(scroll-bar-mode -1)                    ;禁用滚动条
-(if (featurep 'cocoa)
-    (progn
-      ;; 在Mac平台, Emacs不能进入Mac原生的全屏模式,否则会导致 `make-frame' 创建时也集成原生全屏属性后造成白屏和左右滑动现象.
-      ;; 所以先设置 `ns-use-native-fullscreen' 和 `ns-use-fullscreen-animation' 禁止Emacs使用Mac原生的全屏模式.
-      ;; 而是采用传统的全屏模式, 传统的全屏模式, 只会在当前工作区全屏,而不是切换到Mac那种单独的全屏工作区,
-      ;; 这样执行 `make-frame' 先关代码或插件时,就不会因为Mac单独工作区左右滑动产生的bug.
-      ;;
-      ;; Mac平台下,不能直接使用 `set-frame-parameter' 和 `fullboth' 来设置全屏,
-      ;; 那样也会导致Mac窗口管理器直接把Emacs窗口扔到单独的工作区, 从而对 `make-frame' 产生同样的Bug.
-      ;; 所以, 启动的时候通过 `set-frame-parameter' 和 `maximized' 先设置Emacs为最大化窗口状态, 启动5秒以后再设置成全屏状态,
-      ;; Mac就不会移动Emacs窗口到单独的工作区, 最终解决Mac平台下原生全屏窗口导致 `make-frame' 左右滑动闪烁的问题.
-      (setq ns-use-native-fullscreen nil)
-      (setq ns-use-fullscreen-animation nil)
-
-      ;; 默认先最大化。
-      (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
-
-      ;; (run-at-time "2sec" nil
-      ;;              (lambda ()
-      ;;                (toggle-frame-fullscreen)
-      ;;                ))
-      )
-
-  ;; 非Mac平台直接全屏
-  (require 'fullscreen)
-  (fullscreen))
-
-
-(when (featurep 'cocoa)
-  (require 'exec-path-from-shell)
-  (exec-path-from-shell-initialize))
+;; (when (featurep 'cocoa)
+;;   (require 'exec-path-from-shell)
+;;   (exec-path-from-shell-initialize))
 
 ;; Restore emacs session.
 (setq initial-buffer-choice t)
@@ -65,14 +33,14 @@
 (setq confirm-kill-processes nil)       ;退出自动杀掉进程
 (setq async-bytecomp-allowed-packages nil) ;避免magit报错
 (setq word-wrap-by-category t)             ;按照中文折行
-(setq profiler-report-cpu-line-format   ;让 profiler-report 第一列宽一点
-      '((100 left)
-        (24 right ((19 right)
-                   (5 right)))))
-(setq profiler-report-memory-line-format
-      '((100 left)
-        (19 right ((14 right profiler-format-number)
-                   (5 right)))))
+;; (setq profiler-report-cpu-line-format   ;让 profiler-report 第一列宽一点
+;;       '((100 left)
+;;         (24 right ((19 right)
+;;                    (5 right)))))
+;; (setq profiler-report-memory-line-format
+;;       '((100 left)
+;;         (19 right ((14 right profiler-format-number)
+;;                    (5 right)))))
 (add-hook 'find-file-hook 'highlight-parentheses-mode t) ;增强的括号高亮
 
 (setq ad-redefinition-action 'accept)   ;不要烦人的 redefine warning
@@ -101,7 +69,7 @@
 (setq make-backup-files nil)
 
 ;; 加载主题
-(load-theme 'manoj-dark)
+;; (load-theme 'manoj-dark)
 
 
 ;; frame title 显示完整路径
@@ -112,14 +80,14 @@
 
 
 ;; ;; Don't ask me when close emacs with process is running
-;; (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
-;;   "Prevent annoying \"Active processes exist\" query when you quit Emacs."
-;;   (require 'noflet)
-;;   (noflet ((process-list ())) ad-do-it))
+(defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
+  "Prevent annoying \"Active processes exist\" query when you quit Emacs."
+  (require 'noflet)
+  (noflet ((process-list ())) ad-do-it))
 
 ;; ;; Don't ask me when kill process buffer
-;; (setq kill-buffer-query-functions
-;;       (remq 'process-kill-buffer-query-function
-;;             kill-buffer-query-functions))
+(setq kill-buffer-query-functions
+      (remq 'process-kill-buffer-query-function
+            kill-buffer-query-functions))
 
 (provide 'init-generic)
