@@ -711,7 +711,7 @@ This variable is intended to be used in test.")
          (auto-install-download (concat auto-install-emacswiki-base-url file)))
         (t
          ;; Otherwise update package name and install.
-         (auto-install-download "http://www.emacswiki.org/cgi-bin/emacs?action=index;raw=1"
+         (auto-install-download "https://www.emacswiki.org/cgi-bin/emacs?action=index;raw=1"
                                 'auto-install-handle-emacswiki-package-install))))
 
 (defun auto-install-from-gist (&optional gistid)

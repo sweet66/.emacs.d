@@ -76,3 +76,30 @@
 [submodule "site-lisp/extensions/emacs-application-framework"]
 	path = site-lisp/extensions/emacs-application-framework
 	url = https://github.com/emacs-eaf/emacs-application-framework
+[submodule "site-lisp/extensions/magit"]
+	path = site-lisp/extensions/magit
+	url = https://github.com/magit/magit
+[submodule "site-lisp/extensions/transient"]
+	path = site-lisp/extensions/transient
+	url = https://github.com/magit/transient.git
+[submodule "site-lisp/site-lisp/extensions/compat.el"]
+	path = site-lisp/site-lisp/extensions/compat.el
+	url = https://github.com/phikal/compat.el.git
+[submodule "site-lisp/extensions/compat.el"]
+	path = site-lisp/extensions/compat.el
+	url = https://github.com/phikal/compat.el.git
+[submodule "site-lisp/extensions/with-editor"]
+	path = site-lisp/extensions/with-editor
+	url = https://github.com/magit/with-editor.git
+[submodule "sdcv"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/sdcv
+	url = https://github.com/manateelazycat/sdcv.git
+[submodule "awesome-tray"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/awesome-tray
+	url = https://github.com/manateelazycat/awesome-tray.git
+[submodule "lazycat-theme"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/lazycat-theme
+	url = https://github.com/manateelazycat/lazycat-theme.git
+[submodule "themes"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/themes
+	url = https://github.com/doomemacs/themes.git

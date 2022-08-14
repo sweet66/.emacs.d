@@ -19,22 +19,22 @@
 
 ;;; ### Popweb ###
 ;;; --- Web翻译
-(lazy-load-global-keys
- '((";" . popweb-dict-bing-input)
-   ("y" . popweb-dict-bing-pointer))
- "init-popweb"
-  "C-z")
+;; (lazy-load-global-keys
+;;  '((";" . popweb-dict-bing-input)
+;;    ("y" . popweb-dict-bing-pointer))
+;;  "init-popweb"
+;;   "C-z")
 
 
 ;;; ### Sdcv ###
 ;;; --- 星际译王命令行
-;; (lazy-load-global-keys
-;;  '(("p" . sdcv-search-pointer)          ;光标处的单词, buffer显示
-;;    ("y" . sdcv-search-pointer+)         ;光标处的单词, tooltip显示
-;;    ("i" . sdcv-search-input)            ;输入的单词, buffer显示
-;;    (";" . sdcv-search-input+))
-;;  "init-sdcv"
-;;  "C-z")
+(lazy-load-global-keys
+ '(("p" . sdcv-search-pointer)          ;光标处的单词, buffer显示
+   ("y" . sdcv-search-pointer+)         ;光标处的单词, tooltip显示
+   ("i" . sdcv-search-input)            ;输入的单词, buffer显示
+   (";" . sdcv-search-input+))
+ "init-sdcv"
+ "C-z")
 
 
 ;;; ### Aweshell ###
@@ -185,6 +185,14 @@
    ("M-s-n" . lsp-bridge-popup-documentation-scroll-up) ;向下滚动文档
    ("M-s-p" . lsp-bridge-popup-documentation-scroll-down) ;向上滚动文档
    )
- "init-lsp-bridge")
+  "init-lsp-bridge")
+
+;;; ### Magit ###
+;;
+(lazy-load-global-keys
+ '(
+   ("s-x f" . one-key-menu-magit))
+  "init-git")
+
 
 (provide 'init-key)

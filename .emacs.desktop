@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Aug 14 16:32:55 2022
+;; Created Mon Aug 15 01:41:34 2022
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -11,69 +11,57 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("y" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("ini" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("indei" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("awesome-tray-mode-line-height" 0 29 (isearch-case-fold-search t isearch-regexp-function nil)) #("them" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("tray" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("inst" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("lazy" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("lazy-load-unset-keys" 0 20 (isearch-case-fold-search t isearch-regexp-function nil)) #("tab" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("file" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("one-key" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("magit" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("proxy" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("eaf" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("y" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("ini" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("indei" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-session.el" "~/github_project/other/lazycat-emacs/.gitmodules" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/.emacs.d/site-lisp/config/init-session.el" "~/.emacs.d/site-lisp/config/init-fullscreen.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-generic.el" "~/.emacs.d/site-lisp/config/init-generic.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-fullscreen.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-font.el" "~/.emacs.d/site-lisp/config/init-font.el" "~/.emacs.d/site-lisp/config/init-line-number.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-auto-save.el" "~/.emacs.d/site-lisp/config/init-auto-save.el" "~/.emacs.d/init.el" "~/.emacs" "~/.emacs-config/init-accelerate.el" "~/.emacs-config/init-eaf.el" "~/.emacs-config/init.el" "~/.emacs-config/.gitmodules" "~/linakesi_project/vue-project/src/main.ts" "~/.emacs-config/init-lsp-bridge.el" "~/linakesi_project/vue-project/src/App.vue"))
+(setq file-name-history '("~/.emacs.d/site-lisp/extensions/awesome-tray/awesome-tray.el" "~/.emacs.d/site-lisp/config/init-generic.el" "~/.emacs.d/site-lisp/config/init-awesome-tray.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/site-lisp/config/init-awesome-tray.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-awesome-tray.el" "~/github_project/other/lazycat-emacs/.gitmodules" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/.emacs.d/site-lisp/config/init-sdcv.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/.emacs.d/transient/values.el" "~/.emacs.d/site-lisp/extensions/magit/config.mk" "~/.emacs.d/site-lisp/extensions/magit/Makefile" "~/.emacs.d/site-lisp/extensions/magit/README.md" "~/.emacs.d/site-lisp/extensions/magit/lisp/magit.el" "~/.emacs.d/site-lisp/extensions/sweet/magit-extension.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/site-lisp/config/init-key.el" "~/.emacs.d/site-lisp/config/init-git.el" "~/.emacs.d/site-lisp/extensions/sweetmagit-extension.el" "~/.emacs.d/site-lisp/config/init-auto-install.el" "~/.emacs.d/site-lisp/extensions/sweetmagit-extension.el" "~/.emacs.d/site-lisp/extensions/emacs-application-framework/app/git/eaf-git.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-key.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/site-lisp/extensions/one-key/README.md" "~/.emacs.d/site-lisp/config/init-eaf.el" "~/.emacs.d/site-lisp/config/init-proxy.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/site-lisp/config/init-eaf.el" "~/.emacs.d/site-lisp/extensions/sweet/redo.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-session.el" "~/github_project/other/lazycat-emacs/.gitmodules" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/.emacs.d/site-lisp/config/init-session.el" "~/.emacs.d/site-lisp/config/init-fullscreen.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-generic.el" "~/.emacs.d/site-lisp/config/init-generic.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-fullscreen.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-font.el" "~/.emacs.d/site-lisp/config/init-font.el" "~/.emacs.d/site-lisp/config/init-line-number.el" "~/.emacs.d/site-lisp/config/init.el" "~/.emacs.d/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init.el" "~/github_project/other/lazycat-emacs/site-lisp/config/init-auto-save.el" "~/.emacs.d/site-lisp/config/init-auto-save.el" "~/.emacs.d/init.el" "~/.emacs" "~/.emacs-config/init-accelerate.el" "~/.emacs-config/init-eaf.el" "~/.emacs-config/init.el" "~/.emacs-config/.gitmodules" "~/linakesi_project/vue-project/src/main.ts" "~/.emacs-config/init-lsp-bridge.el" "~/linakesi_project/vue-project/src/App.vue"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/lbw/.emacs.d/site-lisp/config/init-awesome-tray.el"
+  "init-awesome-tray.el"
+  'emacs-lisp-mode
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
+  184
+  '(140 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25337 13257 159207 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (59 39 208 208 208 208 208 208))))
+
+(desktop-create-buffer 208
+  "/Users/lbw/.emacs.d/site-lisp/config/init-generic.el"
+  "init-generic.el"
+  'emacs-lisp-mode
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode auto-revert-mode)
+  105
+  '(3041 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25337 13256 903090 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (214 3041 1766 2404 1))))
+
 (desktop-create-buffer 208
   "/Users/lbw/.emacs.d/site-lisp/config/init.el"
   "init.el"
   'emacs-lisp-mode
-  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
-  504
-  '(nil nil)
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode auto-revert-mode)
+  572
+  '(984 nil)
   nil
   nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45854 690892 0) (buffer-file-coding-system . utf-8-unix))
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25337 13256 439233 0) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/Users/lbw/.emacs.d/init.el"
-  "init.el"
+  "/Users/lbw/.emacs.d/site-lisp/extensions/awesome-tray/awesome-tray.el"
+  "awesome-tray.el"
   'emacs-lisp-mode
-  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
-  161
-  '(nil nil)
+  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode auto-revert-mode)
+  7549
+  '(7505 nil)
   nil
   nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45846 692539 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/lbw/github_project/other/lazycat-emacs/site-lisp/config/init-session.el"
-  "init-session.el"
-  'emacs-lisp-mode
-  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
-  55
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45833 115027 0) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/lbw/github_project/other/lazycat-emacs/.gitmodules"
-  ".gitmodules"
-  'fundamental-mode
-  '(subword-mode highlight-parentheses-mode editorconfig-mode yas-minor-mode)
-  146
-  '(1 nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45713 947855 933000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/lbw/github_project/other/lazycat-emacs/site-lisp/config/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(eldoc-mode subword-mode highlight-parentheses-mode lsp-bridge-mode editorconfig-mode yas-minor-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25336 45601 769666 933000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
+  '((tab-width . 2) (indent-tabs-mode) (buffer-display-time 25337 13254 639187 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (7616 7505 46915 7549 7505 1))))
 

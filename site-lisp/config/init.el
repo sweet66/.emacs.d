@@ -12,7 +12,7 @@
       (file-name-handler-alist nil))
 
   ;; 定义一些启动目录，方便下次迁移修改
-  (defvar sweet-emacs-root-dir (file-truename "~/.emacs.d"))
+  (defvar sweet-emacs-root-dir (file-truename "~/.emacs.d/site-lisp"))
   (defvar sweet-emacs-config-dir (concat sweet-emacs-root-dir "/config"))
   (defvar sweet-emacs-extension-dir (concat sweet-emacs-root-dir "/extensions"))
 
@@ -21,19 +21,24 @@
 
     ;; 常规设置
     (require 'init-generic)
+    ;; (require 'lazycat-theme)
+    ;; (lazycat-theme-load-dark)
+    (require 'init-themes)
 
     ;; 在mac下加载环境变量，防止插件找不到外部命令程序
     (when (featurep 'cocoa)
       (require 'cache-path-from-shell))
     ;; 懒加载插件
     (require 'lazy-load)
-    ;;
+    ;; 快捷键组
     (require 'one-key)
     ;; 显示行数
     (require 'display-line-numbers)
 
     ;; 增强的高亮括号
     (require 'init-highlight-parentheses)
+    ;; 更改mode-line
+    ;; (require 'init-awesome-tray)
     ;; 行号设置
     (require 'init-line-number)
     ;; lsp 补全
@@ -64,7 +69,7 @@
           (emacs-session-restore)
 
           ;; tab标签打开buffer
-          ;; (require 'init-awesome-tab)
+          (require 'init-awesome-tab)
           ))))
 
 

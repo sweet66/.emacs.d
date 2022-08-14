@@ -68,10 +68,6 @@
 ;; 关闭备份文件
 (setq make-backup-files nil)
 
-;; 加载主题
-;; (load-theme 'manoj-dark)
-
-
 ;; frame title 显示完整路径
 (setq frame-title-format
       '((:eval (if (buffer-file-name)
@@ -80,10 +76,10 @@
 
 
 ;; ;; Don't ask me when close emacs with process is running
-(defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
-  "Prevent annoying \"Active processes exist\" query when you quit Emacs."
-  (require 'noflet)
-  (noflet ((process-list ())) ad-do-it))
+;; (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
+;;   "Prevent annoying \"Active processes exist\" query when you quit Emacs."
+;;   (require 'noflet)
+;;   (noflet ((process-list ())) ad-do-it))
 
 ;; ;; Don't ask me when kill process buffer
 (setq kill-buffer-query-functions
