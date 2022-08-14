@@ -56,6 +56,7 @@
           ;; 添加editorconfig
           (require 'init-editorconfig)
 
+          (require 'init-eaf)
           (require 'init-proxy)
 
           ;; Restore session at last.
