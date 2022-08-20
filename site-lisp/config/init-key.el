@@ -3,7 +3,6 @@
   (setq mac-option-modifier 'super)
   (setq mac-command-modifier 'meta))
 
-
 ;;; ### Unset key ###
 ;;; --- 卸载按键
 (lazy-load-unset-keys                   ;全局按键的卸载
@@ -34,7 +33,50 @@
    ("i" . sdcv-search-input)            ;输入的单词, buffer显示
    (";" . sdcv-search-input+))
  "init-sdcv"
- "C-z")
+  "C-z")
+
+
+;;; ### Grammatical-Edit ###
+;;; --- 结构化编程
+(lazy-load-unset-keys
+ '("M-J" "M-r" "M-s" "M-;" "C-M-f" "C-M-b" "M-)")
+ grammatical-edit-mode-map)             ;卸载按键
+(defvar grammatical-edit-key-alist nil)
+(setq grammatical-edit-key-alist
+      '(
+        ;; 移动
+        ("M-n" . grammatical-edit-jump-left)
+        ("M-p" . grammatical-edit-jump-right)
+        ;; 符号插入
+        ("%" . grammatical-edit-match-paren)       ;括号跳转
+        ("(" . grammatical-edit-open-round)        ;智能 (
+        ("[" . grammatical-edit-open-bracket)      ;智能 [
+        ("{" . grammatical-edit-open-curly)        ;智能 {
+        (")" . grammatical-edit-close-round)       ;智能 )
+        ("]" . grammatical-edit-close-bracket)     ;智能 ]
+        ("}" . grammatical-edit-close-curly)       ;智能 }
+        ("\"" . grammatical-edit-double-quote)     ;智能 "
+        ("'" . grammatical-edit-single-quote)      ;智能 '
+        ("=" . grammatical-edit-equal)             ;智能 =
+        ("SPC" . grammatical-edit-space)           ;智能 space
+        ("RET" . grammatical-edit-newline)         ;智能 newline
+        ;; 删除
+        ("M-o" . grammatical-edit-backward-delete) ;向后删除
+        ("C-d" . grammatical-edit-forward-delete)  ;向前删除
+        ("C-k" . grammatical-edit-kill)            ;向前kill
+        ;; 包围
+        ("M-\"" . grammatical-edit-wrap-double-quote) ;用 " " 包围对象, 或跳出字符串
+        ("M-'" . grammatical-edit-wrap-single-quote) ;用 ' ' 包围对象, 或跳出字符串
+        ("M-[" . grammatical-edit-wrap-bracket)      ;用 [ ] 包围对象
+        ("M-{" . grammatical-edit-wrap-curly)        ;用 { } 包围对象
+        ("M-(" . grammatical-edit-wrap-round)        ;用 ( ) 包围对象
+        ("M-)" . grammatical-edit-unwrap)            ;去掉包围对象
+        ;; 跳出并换行缩进
+        ("M-:" . grammatical-edit-jump-out-pair-and-newline) ;跳出括号并换行
+        ;; 向父节点跳动
+        ("C-j" . grammatical-edit-jump-up)
+        ))
+(lazy-load-set-keys grammatical-edit-key-alist grammatical-edit-mode-map)
 
 
 ;;; ### Aweshell ###

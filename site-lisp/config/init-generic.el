@@ -1,7 +1,3 @@
-;; (when (featurep 'cocoa)
-;;   (require 'exec-path-from-shell)
-;;   (exec-path-from-shell-initialize))
-
 ;; Restore emacs session.
 (setq initial-buffer-choice t)
 (run-with-timer 1 nil #'(lambda () (bury-buffer)))
@@ -85,5 +81,10 @@
 (setq kill-buffer-query-functions
       (remq 'process-kill-buffer-query-function
             kill-buffer-query-functions))
+
+(setq url-proxy-services
+   '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
+     ("http" . "localhost:8118")
+      ("https" . "localhost:8118")))
 
 (provide 'init-generic)

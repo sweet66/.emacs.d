@@ -32,13 +32,15 @@
     (require 'lazy-load)
     ;; 快捷键组
     (require 'one-key)
+    ;; 结构化编辑
+    (require 'grammatical-edit)
     ;; 显示行数
     (require 'display-line-numbers)
 
     ;; 增强的高亮括号
     (require 'init-highlight-parentheses)
     ;; 更改mode-line
-    ;; (require 'init-awesome-tray)
+    (require 'init-awesome-tray)
     ;; 行号设置
     (require 'init-line-number)
     ;; lsp 补全
@@ -47,6 +49,8 @@
     (require 'init-auto-save)
     ;; 绑定扩展名到特定的模式
     (require 'init-mode)
+    ;; 结构化编辑设置
+    (require 'init-grammatical-edit)
     ;; 按键绑定
     (require 'init-key)
 
@@ -54,6 +58,7 @@
     (run-with-idle-timer
       1 nil
       #'(lambda ()
+          (require 'init-tree-sitter)
           (require 'init-yasnippet)
           (require 'init-markdown-mode)
           ;; 括号自动补全
@@ -71,11 +76,5 @@
           ;; tab标签打开buffer
           (require 'init-awesome-tab)
           ))))
-
-
-(setq url-proxy-services
-   '(("no_proxy" . "^\\(localhost\\|10\\..*\\|192\\.168\\..*\\)")
-     ("http" . "localhost:8118")
-      ("https" . "localhost:8118")))
 
 (provide 'init)

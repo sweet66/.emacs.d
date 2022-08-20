@@ -103,3 +103,12 @@
 [submodule "themes"]
 	path = /Users/lbw/.emacs.d/site-lisp/extensions/themes
 	url = https://github.com/doomemacs/themes.git
+[submodule "grammatical-edit"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/grammatical-edit
+	url = https://github.com/manateelazycat/grammatical-edit
+[submodule "emacs-tree-sitter"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/emacs-tree-sitter
+	url = https://github.com/ubolonton/emacs-tree-sitter
+[submodule "tree-sitter-langs"]
+	path = /Users/lbw/.emacs.d/site-lisp/extensions/tree-sitter-langs
+	url = https://github.com/emacs-tree-sitter/tree-sitter-langs.git
