@@ -21,36 +21,34 @@
 
     ;; 常规设置
     (require 'init-generic)
-    ;; (require 'lazycat-theme)
-    ;; (lazycat-theme-load-dark)
-    (require 'init-themes)
+    ;; (require 'init-themes)
 
     ;; 在mac下加载环境变量，防止插件找不到外部命令程序
-    (when (featurep 'cocoa)
-      (require 'cache-path-from-shell))
+    ;; (when (featurep 'cocoa)
+    ;;   (require 'cache-path-from-shell))
     ;; 懒加载插件
     (require 'lazy-load)
     ;; 快捷键组
     (require 'one-key)
     ;; 结构化编辑
-    (require 'grammatical-edit)
+    ;; (require 'grammatical-edit)
     ;; 显示行数
     (require 'display-line-numbers)
 
     ;; 增强的高亮括号
     (require 'init-highlight-parentheses)
     ;; 更改mode-line
-    (require 'init-awesome-tray)
+    ;; (require 'init-awesome-tray)
     ;; 行号设置
     (require 'init-line-number)
     ;; lsp 补全
-    (require 'init-lsp-bridge)
+    ;; (require 'init-lsp-bridge)
     ;; 自动保存
-    (require 'init-auto-save)
+    ;; (require 'init-auto-save)
     ;; 绑定扩展名到特定的模式
-    (require 'init-mode)
+    ;; (require 'init-mode)
     ;; 结构化编辑设置
-    (require 'init-grammatical-edit)
+    ;; (require 'init-grammatical-edit)
     ;; 按键绑定
     (require 'init-key)
 
@@ -59,22 +57,22 @@
       1 nil
       #'(lambda ()
           (require 'init-tree-sitter)
-          (require 'init-yasnippet)
+          ;; (require 'init-yasnippet)
           (require 'init-markdown-mode)
           ;; 括号自动补全
           ;; (require 'init-awesome-pair)
           ;; 添加editorconfig
           (require 'init-editorconfig)
 
-          (require 'init-eaf)
+          ;; (require 'init-eaf)
           (require 'init-proxy)
 
           ;; Restore session at last.
-          (require 'init-session)
-          (emacs-session-restore)
+          ;; (require 'init-session)
+          ;; (emacs-session-restore)
 
           ;; tab标签打开buffer
-          (require 'init-awesome-tab)
+          ;; (require 'init-awesome-tab)
           ))))
 
 (provide 'init)

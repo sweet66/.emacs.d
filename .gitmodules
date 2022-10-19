@@ -13,9 +13,6 @@
 [submodule "site-lisp/extensions/awesome-pair"]
 	path = site-lisp/extensions/awesome-pair
 	url = https://github.com/manateelazycat/awesome-pair.git
-[submodule "site-lisp/extensions/awesome-tab"]
-	path = site-lisp/extensions/awesome-tab
-	url = https://github.com/manateelazycat/awesome-tab.git
 [submodule "site-lisp/extensions/posframe"]
 	path = site-lisp/extensions/posframe
 	url = https://github.com/tumashu/posframe.git
@@ -92,23 +89,23 @@
 	path = site-lisp/extensions/with-editor
 	url = https://github.com/magit/with-editor.git
 [submodule "sdcv"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/sdcv
+	path = site-lisp/extensions/sdcv
 	url = https://github.com/manateelazycat/sdcv.git
 [submodule "awesome-tray"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/awesome-tray
+	path = site-lisp/extensions/awesome-tray
 	url = https://github.com/manateelazycat/awesome-tray.git
 [submodule "lazycat-theme"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/lazycat-theme
+	path = site-lisp/extensions/lazycat-theme
 	url = https://github.com/manateelazycat/lazycat-theme.git
 [submodule "themes"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/themes
+	path = site-lisp/extensions/themes
 	url = https://github.com/doomemacs/themes.git
 [submodule "grammatical-edit"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/grammatical-edit
+	path = site-lisp/extensions/grammatical-edit
 	url = https://github.com/manateelazycat/grammatical-edit
 [submodule "emacs-tree-sitter"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/emacs-tree-sitter
+	path = site-lisp/extensions/emacs-tree-sitter
 	url = https://github.com/ubolonton/emacs-tree-sitter
 [submodule "tree-sitter-langs"]
-	path = /Users/lbw/.emacs.d/site-lisp/extensions/tree-sitter-langs
+	path = site-lisp/extensions/tree-sitter-langs
 	url = https://github.com/emacs-tree-sitter/tree-sitter-langs.git
