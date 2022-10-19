@@ -1,8 +1,6 @@
-;;; Require
 (require 'auto-save)
 (require 'basic-toolkit)
 
-;;; Code:
 
 (setq desktop-load-locked-desktop t) ; don't popup dialog ask user, load anyway
 (setq desktop-restore-frames nil)    ; don't restore any frame

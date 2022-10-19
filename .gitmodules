@@ -13,6 +13,9 @@
 [submodule "site-lisp/extensions/awesome-pair"]
 	path = site-lisp/extensions/awesome-pair
 	url = https://github.com/manateelazycat/awesome-pair.git
+[submodule "site-lisp/extensions/awesome-tab"]
+	path = site-lisp/extensions/awesome-tab
+	url = https://github.com/manateelazycat/awesome-tab.git
 [submodule "site-lisp/extensions/posframe"]
 	path = site-lisp/extensions/posframe
 	url = https://github.com/tumashu/posframe.git

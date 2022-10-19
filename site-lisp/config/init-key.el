@@ -36,92 +36,6 @@
   "C-z")
 
 
-;;; ### Grammatical-Edit ###
-;;; --- 结构化编程
-(lazy-load-unset-keys
- '("M-J" "M-r" "M-s" "M-;" "C-M-f" "C-M-b" "M-)")
- grammatical-edit-mode-map)             ;卸载按键
-(defvar grammatical-edit-key-alist nil)
-(setq grammatical-edit-key-alist
-      '(
-        ;; 移动
-        ("M-n" . grammatical-edit-jump-left)
-        ("M-p" . grammatical-edit-jump-right)
-        ;; 符号插入
-        ("%" . grammatical-edit-match-paren)       ;括号跳转
-        ("(" . grammatical-edit-open-round)        ;智能 (
-        ("[" . grammatical-edit-open-bracket)      ;智能 [
-        ("{" . grammatical-edit-open-curly)        ;智能 {
-        (")" . grammatical-edit-close-round)       ;智能 )
-        ("]" . grammatical-edit-close-bracket)     ;智能 ]
-        ("}" . grammatical-edit-close-curly)       ;智能 }
-        ("\"" . grammatical-edit-double-quote)     ;智能 "
-        ("'" . grammatical-edit-single-quote)      ;智能 '
-        ("=" . grammatical-edit-equal)             ;智能 =
-        ("SPC" . grammatical-edit-space)           ;智能 space
-        ("RET" . grammatical-edit-newline)         ;智能 newline
-        ;; 删除
-        ("M-o" . grammatical-edit-backward-delete) ;向后删除
-        ("C-d" . grammatical-edit-forward-delete)  ;向前删除
-        ("C-k" . grammatical-edit-kill)            ;向前kill
-        ;; 包围
-        ("M-\"" . grammatical-edit-wrap-double-quote) ;用 " " 包围对象, 或跳出字符串
-        ("M-'" . grammatical-edit-wrap-single-quote) ;用 ' ' 包围对象, 或跳出字符串
-        ("M-[" . grammatical-edit-wrap-bracket)      ;用 [ ] 包围对象
-        ("M-{" . grammatical-edit-wrap-curly)        ;用 { } 包围对象
-        ("M-(" . grammatical-edit-wrap-round)        ;用 ( ) 包围对象
-        ("M-)" . grammatical-edit-unwrap)            ;去掉包围对象
-        ;; 跳出并换行缩进
-        ("M-:" . grammatical-edit-jump-out-pair-and-newline) ;跳出括号并换行
-        ;; 向父节点跳动
-        ("C-j" . grammatical-edit-jump-up)
-        ))
-(lazy-load-set-keys grammatical-edit-key-alist grammatical-edit-mode-map)
-
-
-;;; ### Aweshell ###
-;;; --- 多标签式的shell
-(lazy-load-global-keys
- '(
-   ("s-n" . aweshell-new)
-   ("s-h" . aweshell-toggle)
-   ("s-x s-x" . aweshell-dedicated-toggle)
-   )
- "aweshell")
-
-
-;;; ### Awesome-Tab ###
-;;; --- 多标签浏览
-(lazy-load-set-keys
- '(
-   ("s-j" . awesome-tab-ace-jump)        ;Ace jump
-   ("M-7" . awesome-tab-backward-tab)    ;移动到后一个标签
-   ("M-8" . awesome-tab-forward-tab)     ;移动到前一个标签
-   ("M-9" . awesome-tab-backward-group)  ;移动到后一个标签组
-   ("M-0" . awesome-tab-forward-group)   ;移动到前一个标签组
-   ("<C-tab>" . awesome-tab-forward-tab) ;移动到后一个标签
-   ("<C-S-tab>" . awesome-tab-backward-tab) ;移动到前一个标签
-   ))
-(lazy-load-global-keys
- '(
-   ("M-&" . awesome-tab-backward-tab-other-window)
-   ("M-*" . awesome-tab-forward-tab-other-window)
-   ("M-s-7" . awesome-tab-select-beg-tab)
-   ("M-s-8" . awesome-tab-select-end-tab)
-   ("M-s-9" . awesome-tab-move-current-tab-to-beg)
-   ("M-s-r" . awesome-tab-move-current-tab-to-right)
-   ("M-s-e" . awesome-tab-move-current-tab-to-left)
-   ("s-q" . awesome-tab-kill-other-buffers-in-current-group)
-   ("s-Q" . awesome-tab-kill-all-buffers-in-current-group)
-   ("s-w" . awesome-tab-keep-match-buffers-in-current-group)
-   ("s-W" . awesome-tab-kill-match-buffers-in-current-group)
-   )
- "awesome-tab")
-
-
-
-
-
 ;;; ### Functin key ###
 ;;; --- 功能函数
 (lazy-load-set-keys
@@ -131,43 +45,6 @@
    ("C-&" . switch-to-messages)         ;跳转到 *Messages* buffer
    ))
 
-
-;;; ### Awesome-Pair ###
-;;; --- 结构化编程
-;; (lazy-load-unset-keys
-;;  '("M-J" "M-r" "M-s" "M-;" "C-M-f" "C-M-b" "M-)")
-;;  awesome-pair-mode-map)                 ;卸载按键
-;; (defvar awesome-pair-key-alist nil)
-;; (setq awesome-pair-key-alist
-;;       '(
-;;         ;; 移动
-;;         ("M-n" . awesome-pair-jump-left)
-;;         ("M-p" . awesome-pair-jump-right)
-;;         ;; 符号插入
-;;         ("%" . awesome-pair-match-paren)       ;括号跳转
-;;         ("(" . awesome-pair-open-round)        ;智能 (
-;;         ("[" . awesome-pair-open-bracket)      ;智能 [
-;;         ("{" . awesome-pair-open-curly)        ;智能 {
-;;         (")" . awesome-pair-close-round)       ;智能 )
-;;         ("]" . awesome-pair-close-bracket)     ;智能 ]
-;;         ("}" . awesome-pair-close-curly)       ;智能 }
-;;         ("\"" . awesome-pair-double-quote)     ;智能 "
-;;         ("=" . awesome-pair-equal)             ;智能 =
-;;         ("SPC" . awesome-pair-space)           ;智能 Space
-;;         ;; 删除
-;;         ("M-o" . awesome-pair-backward-delete) ;向后删除
-;;         ("C-d" . awesome-pair-forward-delete)  ;向前删除
-;;         ("C-k" . awesome-pair-kill)            ;向前kill
-;;         ;; 包围
-;;         ("M-\"" . awesome-pair-wrap-double-quote) ;用 " " 包围对象, 或跳出字符串
-;;         ("M-[" . awesome-pair-wrap-bracket)       ;用 [ ] 包围对象
-;;         ("M-{" . awesome-pair-wrap-curly)         ;用 { } 包围对象
-;;         ("M-(" . awesome-pair-wrap-round)         ;用 ( ) 包围对象
-;;         ("M-)" . awesome-pair-unwrap)             ;去掉包围对象
-;;         ;; 跳出并换行缩进
-;;         ("M-:" . awesome-pair-jump-out-pair-and-newline) ;跳出括号并换行
-;;         ))
-;; (lazy-load-set-keys awesome-pair-key-alist awesome-pair-mode-map)
 
 
 ;;; ### Watch other window ###
@@ -197,44 +74,6 @@
  '(
    ("C-=" . er/expand-region))
  "expand-region")
-
-
-;;; ### Flycheck ###
-;;; --- 及时拼写检查
-;; (lazy-load-global-keys
-;;  '(
-;;    ("M-s-j" . flycheck-next-error)      ;显示下一个错误
-;;    ("M-s-k" . flycheck-previous-error)  ;显示上一个错误
-;;    )
-;;  "init-flycheck"
-;;  )
-
-
-(lazy-load-unset-keys                   ;全局按键的卸载
- '("M-." "M-,"))
-(lazy-load-global-keys
- '(
-   ("C-6" . lsp-bridge-lookup-documentation)
-   ("C-7" . lsp-bridge-jump-back)
-   ("C-8" . lsp-bridge-jump)
-   ("M-," . lsp-bridge-jump-back)
-   ("M-." . lsp-bridge-jump)
-   ("C-9" . lsp-bridge-find-references)
-   ("C-0" . lsp-bridge-rename)
-   ("M-s-j" . lsp-bridge-jump-to-next-diagnostic) ;显示下一个错误
-   ("M-s-k" . lsp-bridge-jump-to-prev-diagnostic) ;显示上一个错误
-   ("M-s-l" . lsp-bridge-ignore-current-diagnostic) ;忽略当前的错误
-   ("M-s-n" . lsp-bridge-popup-documentation-scroll-up) ;向下滚动文档
-   ("M-s-p" . lsp-bridge-popup-documentation-scroll-down) ;向上滚动文档
-   )
-  "init-lsp-bridge")
-
-;;; ### Magit ###
-;;
-(lazy-load-global-keys
- '(
-   ("s-x f" . one-key-menu-magit))
-  "init-git")
 
 
 (provide 'init-key)

@@ -15,10 +15,10 @@
       ;; 默认先最大化。
       (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
 
-      ;; (run-at-time "2sec" nil
-      ;;              (lambda ()
-      ;;                (toggle-frame-fullscreen)
-      ;;                ))
+      (run-at-time "2sec" nil
+                   (lambda ()
+                     (toggle-frame-fullscreen)
+                     ))
       )
 
   ;; 非Mac平台直接全屏
@@ -26,5 +26,3 @@
   (fullscreen))
 
 (provide 'init-fullscreen)
-
-;;; init-fullscreen.el ends here
