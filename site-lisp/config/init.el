@@ -45,6 +45,7 @@
           (require 'init-markdown-mode)
           (require 'init-editorconfig)
           (require 'init-proxy)
+          (require 'init-magit)
 
           ;; Restore session at last.
           (require 'init-session)

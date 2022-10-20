@@ -29,14 +29,6 @@
 (setq confirm-kill-processes nil)       ;退出自动杀掉进程
 (setq async-bytecomp-allowed-packages nil) ;避免magit报错
 (setq word-wrap-by-category t)             ;按照中文折行
-;; (setq profiler-report-cpu-line-format   ;让 profiler-report 第一列宽一点
-;;       '((100 left)
-;;         (24 right ((19 right)
-;;                    (5 right)))))
-;; (setq profiler-report-memory-line-format
-;;       '((100 left)
-;;         (19 right ((14 right profiler-format-number)
-;;                    (5 right)))))
 (add-hook 'find-file-hook 'highlight-parentheses-mode t) ;增强的括号高亮
 
 (setq ad-redefinition-action 'accept)   ;不要烦人的 redefine warning
@@ -71,7 +63,7 @@
                  "%b"))))
 
 
-;; ;; Don't ask me when close emacs with process is running
+;; Don't ask me when close emacs with process is running
 ;; (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
 ;;   "Prevent annoying \"Active processes exist\" query when you quit Emacs."
 ;;   (require 'noflet)
