@@ -20,7 +20,7 @@
     ;; 初始化全屏
     (require 'init-fullscreen)
     ;; 常规设置
-    ;; (require 'init-generic)
+    (require 'init-generic)
     ;; 加载主题
     (require 'init-themes)
     ;; 在mac下加载环境变量，防止插件找不到外部命令程序
