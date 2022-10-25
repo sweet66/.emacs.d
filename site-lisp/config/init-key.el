@@ -18,23 +18,22 @@
 
 ;;; ### Popweb ###
 ;;; --- Web翻译
-;; (lazy-load-global-keys
-;;  '((";" . popweb-dict-bing-input)
-;;    ("y" . popweb-dict-bing-pointer))
-;;  "init-popweb"
-;;   "C-z")
+(lazy-load-global-keys
+ '((";" . popweb-dict-youdao-input)
+   ("y" . popweb-dict-youdao-pointer))
+ "init-popweb"
+  "C-z")
 
 
 ;;; ### Sdcv ###
 ;;; --- 星际译王命令行
-(lazy-load-global-keys
- '(("p" . sdcv-search-pointer)          ;光标处的单词, buffer显示
-   ("y" . sdcv-search-pointer+)         ;光标处的单词, tooltip显示
-   ("i" . sdcv-search-input)            ;输入的单词, buffer显示
-   (";" . sdcv-search-input+))
- "init-sdcv"
-  "C-z")
-
+;; (lazy-load-global-keys
+;;  '(("p" . sdcv-search-pointer)          ;光标处的单词, buffer显示
+;;    ("y" . sdcv-search-pointer+)         ;光标处的单词, tooltip显示
+;;    ("i" . sdcv-search-input)            ;输入的单词, buffer显示
+;;    (";" . sdcv-search-input+))
+;;  "init-sdcv"
+;;   "C-z")
 
 ;;; ### Functin key ###
 ;;; --- 功能函数

@@ -19,11 +19,10 @@
   (with-temp-message ""    ;抹掉插件启动的输出
     ;; 初始化全屏
     (require 'init-fullscreen)
-
     ;; 常规设置
-    (require 'init-generic)
+    ;; (require 'init-generic)
+    ;; 加载主题
     (require 'init-themes)
-
     ;; 在mac下加载环境变量，防止插件找不到外部命令程序
     (when (featurep 'cocoa)
       (require 'cache-path-from-shell))
@@ -48,8 +47,8 @@
           (require 'init-magit)
 
           ;; Restore session at last.
-          (require 'init-session)
-          (emacs-session-restore)
+          ;; (require 'init-session)
+          ;; (emacs-session-restore)
           ))))
 
 (provide 'init)
