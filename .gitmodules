@@ -106,3 +106,6 @@
 [submodule "tree-sitter-langs"]
 	path = site-lisp/extensions/tree-sitter-langs
 	url = https://github.com/emacs-tree-sitter/tree-sitter-langs.git
+[submodule "site-lisp/extensions/highlight-parentheses.el"]
+	path = site-lisp/extensions/highlight-parentheses.el
+	url = https://github.com/tsdh/highlight-parentheses.el
