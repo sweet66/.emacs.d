@@ -4,33 +4,9 @@
 [submodule "site-lisp/extensions/lazy-load"]
 	path = site-lisp/extensions/lazy-load
 	url = https://github.com/manateelazycat/lazy-load.git
-[submodule "site-lisp/extensions/aweshell"]
-	path = site-lisp/extensions/aweshell
-	url = https://github.com/manateelazycat/aweshell.git
-[submodule "site-lisp/extensions/awesome-pair"]
-	path = site-lisp/extensions/awesome-pair
-	url = https://github.com/manateelazycat/awesome-pair.git
-[submodule "site-lisp/extensions/awesome-tab"]
-	path = site-lisp/extensions/awesome-tab
-	url = https://github.com/manateelazycat/awesome-tab.git
 [submodule "site-lisp/extensions/posframe"]
 	path = site-lisp/extensions/posframe
 	url = https://github.com/tumashu/posframe.git
-[submodule "site-lisp/extensions/olivetti"]
-	path = site-lisp/extensions/olivetti
-	url = https://github.com/rnkn/olivetti.git
-[submodule "site-lisp/extensions/web-mode"]
-	path = site-lisp/extensions/web-mode
-	url = https://github.com/fxbois/web-mode.git
-[submodule "site-lisp/extensions/instant-rename-tag"]
-	path = site-lisp/extensions/instant-rename-tag
-	url = https://github.com/manateelazycat/instant-rename-tag.git
-[submodule "site-lisp/extensions/highlight-matching-tag"]
-	path = site-lisp/extensions/highlight-matching-tag
-	url = https://github.com/manateelazycat/highlight-matching-tag.git
-[submodule "site-lisp/extensions/js2-refactor"]
-	path = site-lisp/extensions/js2-refactor
-	url = https://github.com/js-emacs/js2-refactor.el.git
 [submodule "site-lisp/extensions/one-key"]
 	path = site-lisp/extensions/one-key
 	url = https://github.com/manateelazycat/one-key.git
@@ -43,36 +19,18 @@
 [submodule "site-lisp/extensions/editorconfig-emacs"]
 	path = site-lisp/extensions/editorconfig-emacs
 	url = https://github.com/editorconfig/editorconfig-emacs.git
-[submodule "site-lisp/extensions/typescript"]
-	path = site-lisp/extensions/typescript
-	url = https://github.com/emacs-typescript/typescript.el.git
 [submodule "site-lisp/extensions/s"]
 	path = site-lisp/extensions/s
 	url = https://github.com/magnars/s.el.git
 [submodule "site-lisp/extensions/dash"]
 	path = site-lisp/extensions/dash
 	url = https://github.com/magnars/dash.el.git
-[submodule "site-lisp/extensions/multiple-cursor"]
-	path = site-lisp/extensions/multiple-cursor
-	url = https://github.com/magnars/multiple-cursors.el
 [submodule "site-lisp/extensions/popweb"]
 	path = site-lisp/extensions/popweb
 	url = https://github.com/manateelazycat/popweb.git
-[submodule "site-lisp/extensions/lspbridge"]
-	path = site-lisp/extensions/lspbridge
-	url = https://github.com/manateelazycat/lsp-bridge
 [submodule "site-lisp/extensions/markdown-mode"]
 	path = site-lisp/extensions/markdown-mode
 	url = https://github.com/jrblevin/markdown-mode
-[submodule "site-lisp/extensions/json-mode"]
-	path = site-lisp/extensions/json-mode
-	url = https://github.com/joshwnj/json-mode
-[submodule "site-lisp/extensions/json-snatcher"]
-	path = site-lisp/extensions/json-snatcher
-	url = https://github.com/Sterlingg/json-snatcher
-[submodule "site-lisp/extensions/emacs-application-framework"]
-	path = site-lisp/extensions/emacs-application-framework
-	url = https://github.com/emacs-eaf/emacs-application-framework
 [submodule "site-lisp/extensions/magit"]
 	path = site-lisp/extensions/magit
 	url = https://github.com/magit/magit
@@ -91,21 +49,12 @@
 [submodule "sdcv"]
 	path = site-lisp/extensions/sdcv
 	url = https://github.com/manateelazycat/sdcv.git
-[submodule "awesome-tray"]
-	path = site-lisp/extensions/awesome-tray
-	url = https://github.com/manateelazycat/awesome-tray.git
 [submodule "themes"]
 	path = site-lisp/extensions/themes
 	url = https://github.com/doomemacs/themes.git
-[submodule "grammatical-edit"]
-	path = site-lisp/extensions/grammatical-edit
-	url = https://github.com/manateelazycat/grammatical-edit
-[submodule "emacs-tree-sitter"]
-	path = site-lisp/extensions/emacs-tree-sitter
-	url = https://github.com/ubolonton/emacs-tree-sitter
-[submodule "tree-sitter-langs"]
-	path = site-lisp/extensions/tree-sitter-langs
-	url = https://github.com/emacs-tree-sitter/tree-sitter-langs.git
 [submodule "site-lisp/extensions/highlight-parentheses.el"]
 	path = site-lisp/extensions/highlight-parentheses.el
 	url = https://github.com/tsdh/highlight-parentheses.el
+[submodule "site-lisp/extensions/exec-path-from-shell"]
+	path = site-lisp/extensions/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell
