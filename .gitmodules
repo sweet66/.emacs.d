@@ -58,3 +58,9 @@
 [submodule "site-lisp/extensions/exec-path-from-shell"]
 	path = site-lisp/extensions/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell
+[submodule "site-lisp/extensions/yasnippet"]
+	path = site-lisp/extensions/yasnippet
+	url = https://github.com/joaotavora/yasnippet
+[submodule "site-lisp/extensions/acm-terminal"]
+	path = site-lisp/extensions/acm-terminal
+	url = https://github.com/twlz0ne/acm-terminal
