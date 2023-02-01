@@ -61,3 +61,9 @@
 [submodule "site-lisp/extensions/yasnippet"]
 	path = site-lisp/extensions/yasnippet
 	url = https://github.com/joaotavora/yasnippet
+[submodule "site-lisp/extensions/lsp-bridge"]
+	path = site-lisp/extensions/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge
+[submodule "site-lisp/extensions/typescript"]
+	path = site-lisp/extensions/typescript
+	url = https://github.com/emacs-typescript/typescript.el
