@@ -34,6 +34,8 @@
     (require 'init-highlight-parentheses)
     ;; 行号设置
     (require 'init-line-number)
+    ;; 自动补全
+    (require 'init-lsp-bridge)
     ;; 按键绑定
     (require 'init-key)
 
@@ -42,6 +44,7 @@
       1 nil
       #'(lambda ()
           (require 'init-markdown-mode)
+          (require 'typescript-mode)
           (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)
