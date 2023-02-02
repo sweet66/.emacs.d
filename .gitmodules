@@ -67,3 +67,9 @@
 [submodule "site-lisp/extensions/typescript"]
 	path = site-lisp/extensions/typescript
 	url = https://github.com/emacs-typescript/typescript.el
+[submodule "site-lisp/extensions/dumb-jump"]
+	path = site-lisp/extensions/dumb-jump
+	url = https://github.com/jacktasia/dumb-jump.git
+[submodule "site-lisp/extensions/popup-el"]
+	path = site-lisp/extensions/popup-el
+	url = https://github.com/auto-complete/popup-el
