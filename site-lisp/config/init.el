@@ -25,7 +25,8 @@
     (require 'init-themes)
     ;; 在mac下加载环境变量，防止插件找不到外部命令程序
     (when (featurep 'cocoa)
-      (require 'cache-path-from-shell))
+      (require 'cache-path-from-shell)
+      (exec-path-from-shell-initialize))
     ;; 懒加载插件
     (require 'lazy-load)
     ;; 快捷键组
