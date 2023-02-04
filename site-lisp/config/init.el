@@ -37,6 +37,8 @@
     (require 'init-line-number)
     ;; 自动补全
     (require 'init-lsp-bridge)
+    ;; 输入中文自动翻译
+    (require 'init-insert-translated-name)
     ;; 按键绑定
     (require 'init-key)
 
