@@ -1,12 +1,17 @@
 (defun load-current-buffer ()
   (interactive)
   (save-buffer)
-  (load-file buffer-file-name))
+  (cond ((derived-mode-p 'sh-mode)
+          (shell-command (format "bash %s" (buffer-file-name))))
+    (t
+      (load-file buffer-file-name))
+    ))
 
 (global-set-key (kbd "C-z l") 'load-current-buffer)
+(global-set-key (kbd "C-z i") 'insert-translated-name-insert)
 
 
-;; 通过外部命令行工具扩展 Emacs
+;; 通过外部命令行工具扩展
 (defun my-first-elisp-code ()
   (interactive)
   (message "%s" (shell-command-to-string "git status")))
@@ -93,10 +98,10 @@
   (insert text-property-example-string))
 
 (defun highlight-overlay-example ()
-  (set (make-local-variable 'overlay-var) (make-overlay (point) (point)))
-  (overlay-put overlay-var 'face 'font-lock-function-name-face)
-  (move-overlay overlay-var 1 2)
-  (delete-overlay overlay-var))
+  (set (make-local-variable 'overlay-var) (make-overlay (point) (point))) ; 创建overlay
+  (overlay-put overlay-var 'face 'font-lock-function-name-face) ; 赋予颜色
+  (move-overlay overlay-var 1 3) ; 显示overlay
+  (delete-overlay overlay-var))  ; 删除overlay
 
 
 ;; 条件判断
@@ -126,7 +131,7 @@
     (cl-return 123)))
 
 
-;; 获取光标处的内容
+;; 获取光标处的内容,
 (defun lsp-bridge-in-comment-p (&optional state)
   (ignore-errors
     (unless (or (bobp) (eobp))
@@ -152,5 +157,21 @@
       (beginning-of-line))
     (parse-partial-sexp (point) point)))
 
+(defun my-plugin-request-get (url)
+  (interactive "s请输入url: ")
+  (let (json)
+    (url-retrieve (url-encode-url url)
+      (lambda (status)
+        (message "%s" status)
+        (set-buffer-multibyte t)
+        (goto-char (point-min))
+        (when (not (string-match "200 OK" (buffer-string)))
+          (error "Problem connecting to the server"))
+        (re-search-forward "^$" nil 'move)
+        (setq json (json-read-from-string (buffer-substring-no-properties (point) (point-max))))
+        (create-file-buffer "quest-result")
+        (with-current-buffer "quest-result"
+          (insert (format "%s" json))
+          (switch-to-buffer "quest-result"))))))
 
 (provide 'my-plugin)

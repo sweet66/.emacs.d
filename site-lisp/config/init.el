@@ -51,6 +51,7 @@
           (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)
+          (require 'init-elisp-demos)
 
           ;; Restore session at last.
           ;; (require 'init-session)
