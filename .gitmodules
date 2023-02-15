@@ -79,6 +79,3 @@
 [submodule "site-lisp/extensions/elisp-demos"]
 	path = site-lisp/extensions/elisp-demos
 	url = https://github.com/xuchunyang/elisp-demos
-[submodule "site-lisp/extensions/emacs-rime"]
-	path = site-lisp/extensions/emacs-rime
-	url = https://github.com/DogLooksGood/emacs-rime.git
