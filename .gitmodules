@@ -79,3 +79,9 @@
 [submodule "site-lisp/extensions/elisp-demos"]
 	path = site-lisp/extensions/elisp-demos
 	url = https://github.com/xuchunyang/elisp-demos
+[submodule "site-lisp/extensions/deno-bridge"]
+	path = site-lisp/extensions/deno-bridge
+	url = https://github.com/manateelazycat/deno-bridge.git
+[submodule "site-lisp/extensions/emacs-websocket"]
+	path = site-lisp/extensions/emacs-websocket
+	url = https://github.com/ahyatt/emacs-websocket.git
