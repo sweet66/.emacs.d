@@ -48,6 +48,8 @@
       #'(lambda ()
           (require 'init-markdown-mode)
           (require 'typescript-mode)
+          (require 'web-mode)
+          (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
           (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)
