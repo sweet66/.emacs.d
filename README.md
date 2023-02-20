@@ -11,7 +11,7 @@ git submodule update --init --recursive
 git submodule foreach git reset --hard
 ```
 
-3. Install emacs-plus@28
+3. Install [emacs-plus@28](https://github.com/d12frosted/homebrew-emacs-plus)
 ```
 brew tap d12frosted/emacs-plus
 brew install emacs-plus@28 --with-cacodemon-icon
