@@ -16,3 +16,16 @@ git submodule foreach git reset --hard
 brew tap d12frosted/emacs-plus
 brew install emacs-plus@28 --with-cacodemon-icon
 ```
+
+4. Install the `lsp-bridge` external dependencies
+```
+pip3 install epc orjson sexpdata==0.0.3 six
+npm install -g typescript-language-server typescript @volar/vue-language-server emmet-ls 
+```
+
+5. Install ` popweb ` external dependencies
+```
+pip3 install PyQt5
+pip3 install PyQtWebEngine
+```
+> 注意sexpdata需要安装0.0.3版本，不然会报错
