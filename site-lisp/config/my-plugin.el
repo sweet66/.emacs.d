@@ -6,9 +6,20 @@
     (t
       (load-file buffer-file-name))
     ))
-
 (global-set-key (kbd "C-z l") 'load-current-buffer)
-(global-set-key (kbd "C-z i") 'insert-translated-name-insert)
+
+(defun new-tab-to-open-the-file (file &optional wildcard)
+  (interactive
+    (find-file-read-args "Find file in other tab: "
+      (confirm-nonexistent-file-or-buffer)))
+  (let ((exist-buffer (cl-dolist (buffer (buffer-list))
+    (when (string-equal (expand-file-name file) (buffer-file-name buffer))
+      (tab-switch (buffer-name buffer))
+      (cl-return t)))))
+    (when (not exist-buffer)
+      (find-file-other-tab file))))
+(global-set-key (kbd "C-z o") 'new-tab-to-open-the-file)
+
 
 
 ;; 通过外部命令行工具扩展

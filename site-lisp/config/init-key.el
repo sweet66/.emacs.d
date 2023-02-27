@@ -28,8 +28,9 @@
 ;;; --- 写中文翻译成英文函数名、 变量名
 (lazy-load-global-keys
  '(
-   ("," . insert-translated-name-insert-with-underline)
-   ("." . insert-translated-name-insert-with-camel)
+    ("," . insert-translated-name-insert-with-underline)
+    ("." . insert-translated-name-insert-with-camel)
+    ("-" . insert-translated-name-insert-with-line)
    )
  "insert-translated-name"
  "C-z"
