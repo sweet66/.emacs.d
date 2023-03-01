@@ -21,6 +21,9 @@
 (global-set-key (kbd "C-z o") 'new-tab-to-open-the-file)
 
 
+(global-set-key (kbd "C-z n") 'acm-doc-scroll-up)
+(global-set-key (kbd "C-z p") 'acm-doc-scroll-down)
+(global-set-key (kbd "C-z t") 'acm-doc-toggle)
 
 ;; 通过外部命令行工具扩展
 (defun my-first-elisp-code ()
