@@ -42,6 +42,8 @@
     ;; 按键绑定
     (require 'init-key)
 
+    (add-hook 'web-mode-hook (lambda () (setq web-mode-script-padding 0)) 100 nil)   
+
     ;; 可以延后加载的
     (run-with-idle-timer
       1 nil
@@ -50,6 +52,7 @@
           (require 'typescript-mode)
           (require 'web-mode)
           (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
+          (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))	  
           (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)

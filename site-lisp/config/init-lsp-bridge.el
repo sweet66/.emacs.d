@@ -10,6 +10,7 @@
 (setq lsp-bridge-enable-hover-diagnostic t)
 (setq acm-backend-yas-match-by-trigger-keyword t)
 
+(add-to-list 'lsp-bridge-multi-lang-server-extension-list '(("tsx") . "volar_emmet"))
 (global-lsp-bridge-mode)
 
 ;; 打开日志，开发者才需要
