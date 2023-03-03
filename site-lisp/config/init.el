@@ -53,6 +53,7 @@
           (require 'web-mode)
           (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
           (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))	  
+          (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
           (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)
