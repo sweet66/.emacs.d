@@ -188,4 +188,14 @@
           (insert (format "%s" json))
           (switch-to-buffer "quest-result"))))))
 
+(defun auto-sequence (format start end)
+  (interactive "sSequence format: \nnEnter start number: \nnEnter end number: ")
+  (kmacro-set-format format)
+  (kmacro-set-counter start)
+  (while (< start (+ 1 end))
+    (execute-kbd-macro (read-kbd-macro "C-x )"))
+    (setq start (+ 1 start))))
+
+
+
 (provide 'my-plugin)
