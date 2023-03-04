@@ -45,12 +45,12 @@
         ;; If typescript file include deno.land url, then use Deno LSP server.
         (save-excursion
           (when (string-equal (file-name-extension filepath) "ts")
-            (dolist (buf (buffer-list))
+            (cl-dolist (buf (buffer-list))
               (when (string-equal (buffer-file-name buf) filepath)
                 (with-current-buffer buf
                   (goto-char (point-min))
                   (when (search-forward-regexp (regexp-quote "from \"https://deno.land") nil t)
-                    (return "deno")))))))))
+                    (cl-return "deno")))))))))
 
 (provide 'init-lsp-bridge)
 
