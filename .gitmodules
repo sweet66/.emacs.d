@@ -91,3 +91,6 @@
 [submodule "site-lisp/extensions/olivetti"]
 	path = site-lisp/extensions/olivetti
 	url = https://github.com/rnkn/olivetti.git
+[submodule "site-lisp/extensions/yaml-mode"]
+	path = site-lisp/extensions/yaml-mode
+	url = https://github.com/yoshiki/yaml-mode.git

@@ -190,12 +190,19 @@
 
 (defun auto-sequence (format start end)
   (interactive "sSequence format: \nnEnter start number: \nnEnter end number: ")
-  (kmacro-set-format format)
-  (kmacro-set-counter start)
-  (while (< start (+ 1 end))
-    (execute-kbd-macro (read-kbd-macro "C-x )"))
-    (setq start (+ 1 start))))
+  (progn
+    (kmacro-set-format format)
+    (kmacro-set-counter start)
+    (while (< start (+ 1 end))
+      (execute-kbd-macro (read-kbd-macro "<f3> RET"))
+      (setq start (+ 1 start)))
+    ))
 
+(kmacro-set-format "abcccc%d")
+(execute-kbd-macro (read-kbd-macro "<f3> RET"))
+
+(fset 'test-marco
+  (kmacro-lambda-form [?a ?b ?c] 0 "abcccc%d"))
 
 
 (provide 'my-plugin)
