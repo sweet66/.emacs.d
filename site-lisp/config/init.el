@@ -55,6 +55,7 @@
           (add-hook 'web-mode-hook (lambda () (setq web-mode-script-padding 0)) 100 t)
           (add-hook 'web-mode-hook (lambda () (setq web-mode-style-padding 0)) 100 t)
           (require 'yaml-mode)
+	  (require 'rjsx-mode)
           (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)

@@ -68,9 +68,9 @@
   (insert "Hello")
   (buffer-string))
 
-;; (with-current-buffer "test.el"
-;;   (insert "Hello")
-;;   (save-buffer))
+(with-current-buffer "test.txt"
+  (insert "Hello")
+  (save-buffer))
 
 (ignore-errors
   (require 'my-plugin.el))
@@ -201,8 +201,28 @@
 (kmacro-set-format "abcccc%d")
 (execute-kbd-macro (read-kbd-macro "<f3> RET"))
 
+(kmacro-start-macro nil)
+(kmacro-end-macro 1)
+(name-last-kbd-macro 'test-marco)
+
 (fset 'test-marco
-  (kmacro-lambda-form [?a ?b ?c] 0 "abcccc%d"))
+      (kmacro-lambda-form [?a ?b ?c] 0 "abcccc%d"))
+
+(with-current-buffer "hot-wheels.ts"
+  (goto-char (point-min))
+  (let ((point-list '()) (point (point-min)))
+    (while point
+      (setq point (search-forward "path: '" nil t))
+      (push (format "'/micro-app/merchant-in-mengxiang%s" (substring  (thing-at-point 'string) 1)) point-list)
+      (setq point (search-forward "title: '" nil t))
+      (push (thing-at-point 'string) point-list))
+      (create-file-buffer "test.txt")
+      (with-current-buffer "test.txt"
+	(cl-dolist (txt point-list)
+		(insert (format "%s\n" txt)))
+	)))
+
+
 
 
 (provide 'my-plugin)
