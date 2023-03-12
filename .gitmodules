@@ -97,3 +97,9 @@
 [submodule "site-lisp/extensions/js2-mode"]
 	path = site-lisp/extensions/js2-mode
 	url = https://github.com/mooz/js2-mode.git
+[submodule "site-lisp/extensions/json-mode"]
+	path = site-lisp/extensions/json-mode
+	url = https://github.com/joshwnj/json-mode
+[submodule "site-lisp/extensions/json-snatcher"]
+	path = site-lisp/extensions/json-snatcher
+	url = https://github.com/Sterlingg/json-snatcher

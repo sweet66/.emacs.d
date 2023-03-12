@@ -63,6 +63,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'typescript-mode "typescript-mode")
 (autoload 'yaml-mode "yaml-mode")
 (autoload 'rjsx-mode "rjsx-mode")
+(autoload 'json-mode "json-mode")
 
 ;;; ### Auto-fill ###
 ;;; --- 自动换行
@@ -73,4 +74,4 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                 ))
   (add-hook hook #'(lambda () (auto-fill-mode 1))))
 
-(provide 'init-mode)
+(provide 'init-model)

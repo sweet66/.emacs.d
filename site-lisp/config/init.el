@@ -38,7 +38,7 @@
     ;; 自动补全
     (require 'init-lsp-bridge)
     ;; 自动加载对应文件后缀的Mode
-    (require 'init-mode)
+    (require 'init-model)
     ;; 按键绑定
     (require 'init-key)
 
