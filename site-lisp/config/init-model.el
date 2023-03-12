@@ -62,6 +62,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 (autoload 'css-mode "css-mode")
 (autoload 'typescript-mode "typescript-mode")
 (autoload 'yaml-mode "yaml-mode")
+(autoload 'rjsx-mode "rjsx-mode")
 
 ;;; ### Auto-fill ###
 ;;; --- 自动换行

@@ -91,3 +91,9 @@
 [submodule "site-lisp/extensions/yaml-mode"]
 	path = site-lisp/extensions/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode.git
+[submodule "site-lisp/extensions/rjsx-mode"]
+	path = site-lisp/extensions/rjsx-mode
+	url = https://github.com/felipeochoa/rjsx-mode.git
+[submodule "site-lisp/extensions/js2-mode"]
+	path = site-lisp/extensions/js2-mode
+	url = https://github.com/mooz/js2-mode.git
