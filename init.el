@@ -36,4 +36,6 @@
 
 (add-subdirs-to-load-path "~/.emacs.d/site-lisp")
 
+(autoload 'test-auto-function "test" "我是一个测试自动加载lisp文件的函数" t)
+
 (require 'init)

@@ -88,3 +88,10 @@ Does nothing if point is not currently on line where a test is declared."
 (global-set-key (kbd "C-c t") 'buster-goto-beginning-of-test)
 (global-set-key (kbd "C-c C-d") 'buster-disable-test)
 (global-set-key (kbd "C-c C-e") 'buster-enable-test)
+
+(defun test-auto-function ()
+  "哈哈哈好好或"
+  (interactive)
+  (message "hhhhhhhh"))
+
+(message "exec test-auto-function")

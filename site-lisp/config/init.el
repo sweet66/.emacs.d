@@ -37,8 +37,8 @@
     (require 'init-line-number)
     ;; 自动补全
     (require 'init-lsp-bridge)
-    ;; 输入中文自动翻译
-    (require 'init-insert-translated-name)
+    ;; 自动加载对应文件后缀的Mode
+    (require 'init-mode)
     ;; 按键绑定
     (require 'init-key)
 
@@ -46,16 +46,6 @@
     (run-with-idle-timer
       1 nil
       #'(lambda ()
-          (require 'init-markdown-mode)
-          (require 'typescript-mode)
-          (require 'web-mode)
-          (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode))
-          (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
-          (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-          (add-hook 'web-mode-hook (lambda () (setq web-mode-script-padding 0)) 100 t)
-          (add-hook 'web-mode-hook (lambda () (setq web-mode-style-padding 0)) 100 t)
-          (require 'yaml-mode)
-          (require 'init-editorconfig)
           (require 'init-proxy)
           (require 'init-magit)
           (require 'init-elisp-demos)

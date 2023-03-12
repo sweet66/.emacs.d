@@ -16,9 +16,6 @@
 [submodule "site-lisp/extensions/expand-region"]
 	path = site-lisp/extensions/expand-region
 	url = https://github.com/magnars/expand-region.el.git
-[submodule "site-lisp/extensions/editorconfig-emacs"]
-	path = site-lisp/extensions/editorconfig-emacs
-	url = https://github.com/editorconfig/editorconfig-emacs.git
 [submodule "site-lisp/extensions/s"]
 	path = site-lisp/extensions/s
 	url = https://github.com/magnars/s.el.git
