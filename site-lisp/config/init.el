@@ -52,7 +52,8 @@
           (require 'init-magit)
           (require 'init-elisp-demos)
 	  (require 'init-markdown-mode)
-
+	  (require 'editorconfig)
+	  (editorconfig-mode 1)
           ;; Restore session at last.
           ;; (require 'init-session)
           ;; (emacs-session-restore)

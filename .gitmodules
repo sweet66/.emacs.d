@@ -103,3 +103,6 @@
 [submodule "site-lisp/extensions/json-snatcher"]
 	path = site-lisp/extensions/json-snatcher
 	url = https://github.com/Sterlingg/json-snatcher
+[submodule "site-lisp/extensions/editorconfig-emacs"]
+	path = site-lisp/extensions/editorconfig-emacs
+	url = https://github.com/editorconfig/editorconfig-emacs.git
