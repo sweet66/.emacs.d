@@ -38,7 +38,9 @@
     ;; 自动补全
     (require 'init-lsp-bridge)
     ;; 自动加载对应文件后缀的Mode
-    (require 'init-model)
+    (require 'init-mode)
+    ;; 设置分组快捷键菜单
+    (require 'init-one-key)
     ;; 按键绑定
     (require 'init-key)
 
@@ -49,10 +51,13 @@
           (require 'init-proxy)
           (require 'init-magit)
           (require 'init-elisp-demos)
+	  (require 'init-markdown-mode)
 
           ;; Restore session at last.
           ;; (require 'init-session)
           ;; (emacs-session-restore)
           ))))
+
+(autoload 'test-auto-function "test" "我是一个测试自动加载lisp文件的函数" t)
 
 (provide 'init)
