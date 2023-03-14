@@ -12,7 +12,7 @@
 
 (setq acm-enable-tabnine nil)
 
-(add-to-list 'lsp-bridge-multi-lang-server-extension-list '(("tsx") . "typescriptreact"))
+(add-to-list 'lsp-bridge-single-lang-server-extension-list '(("tsx") . "typescriptreact"))
 (add-to-list 'lsp-bridge-multi-lang-server-extension-list '(("html") . "html_emmet"))
 
 (global-lsp-bridge-mode)
