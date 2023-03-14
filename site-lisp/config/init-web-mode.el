@@ -1,0 +1,10 @@
+(require 'web-mode)
+(require 'rjsx-mode)
+(require 'highlight-matching-tag)
+
+(setq web-mode-enable-auto-quoting nil)
+(highlight-matching-tag 1)
+(setq web-mode-tag-auto-close-style 2)
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-script-padding 0)
+(setq web-mode-style-padding 0)

@@ -106,3 +106,6 @@
 [submodule "site-lisp/extensions/editorconfig-emacs"]
 	path = site-lisp/extensions/editorconfig-emacs
 	url = https://github.com/editorconfig/editorconfig-emacs.git
+[submodule "site-lisp/extensions/highlight-matching-tag"]
+	path = site-lisp/extensions/highlight-matching-tag
+	url = https://github.com/manateelazycat/highlight-matching-tag

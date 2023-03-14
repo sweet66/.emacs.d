@@ -57,12 +57,11 @@ The test for presence of the car of ELT-CONS is done with `equal'."
 
 ;;; Mode load.
 (autoload 'markdown-mode "init-markdown-mode")
-(autoload 'web-mode "web-mode")
-(autoload 'js-mode "web-mode")
+(autoload 'web-mode "init-web-mode")
+(autoload 'js-mode "init-web-mode")
 (autoload 'css-mode "css-mode")
 (autoload 'typescript-mode "typescript-mode")
 (autoload 'yaml-mode "yaml-mode")
-(autoload 'rjsx-mode "rjsx-mode")
 (autoload 'json-mode "json-mode")
 
 ;;; ### Auto-fill ###

@@ -59,6 +59,4 @@
           ;; (emacs-session-restore)
           ))))
 
-(autoload 'test-auto-function "test" "我是一个测试自动加载lisp文件的函数" t)
-
 (provide 'init)
