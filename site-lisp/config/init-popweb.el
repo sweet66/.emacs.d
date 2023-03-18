@@ -1,5 +1,6 @@
-(require 'popweb-dict-bing)
-(require 'popweb-dict-youdao)
+;; (require 'popweb-dict-bing)
+;; (require 'popweb-dict-youdao)
+(require 'popweb-dict) 
 
 (setq popweb-proxy-type "socks5")
 (setq popweb-proxy-host "127.0.0.1")
