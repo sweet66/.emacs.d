@@ -11,6 +11,16 @@
       ;; 清空避免加载远程文件的时候分析文件。
       (file-name-handler-alist nil))
 
+  ;; 让窗口启动更平滑
+  (setq frame-inhibit-implied-resize t)
+  (setq-default inhibit-redisplay t
+                inhibit-message t)
+  (add-hook 'window-setup-hook
+            (lambda ()
+              (setq-default inhibit-redisplay nil
+                            inhibit-message nil)
+              (redisplay)))
+
   ;; 定义一些启动目录，方便下次迁移修改
   (defvar sweet-emacs-root-dir (file-truename "~/.emacs.d/site-lisp"))
   (defvar sweet-emacs-config-dir (concat sweet-emacs-root-dir "/config"))
@@ -31,6 +41,9 @@
     (require 'lazy-load)
     ;; 快捷键组
     (require 'one-key)
+    ;; chatGPT
+    (require 'mind-wave)
+    
     ;; 增强的高亮括号
     (require 'init-highlight-parentheses)
     ;; 行号设置

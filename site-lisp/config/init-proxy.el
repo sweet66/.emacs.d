@@ -36,4 +36,8 @@
 
 (proxy-socks-enable)
 
+(setenv "http_proxy" "http://127.0.0.1:8118/")
+(setenv "https_proxy" "http://127.0.0.1:8118/")
+(setenv "all_proxy" "http://127.0.0.1:8118/")
+
 (provide 'init-proxy)
