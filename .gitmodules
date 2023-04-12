@@ -112,3 +112,6 @@
 [submodule "site-lisp/extensions/mind-wave"]
 	path = site-lisp/extensions/mind-wave
 	url = https://github.com/manateelazycat/mind-wave.git
+[submodule "site-lisp/extensions/emacs-application-framework"]
+	path = site-lisp/extensions/emacs-application-framework
+	url = https://github.com/emacs-eaf/emacs-application-framework

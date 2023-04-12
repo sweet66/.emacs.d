@@ -1,13 +1,41 @@
+;; 加载当前buffer
 (defun load-current-buffer ()
   (interactive)
   (save-buffer)
   (cond ((derived-mode-p 'sh-mode)
-          (shell-command (format "bash %s" (buffer-file-name))))
+         (shell-command (format "bash %s" (buffer-file-name))))
+	((derived-mode-p 'js-mode)
+	 (shell-command (format "node %s" (buffer-file-name))))
     (t
       (load-file buffer-file-name))
     ))
 (global-set-key (kbd "C-z l") 'load-current-buffer)
 
+(defun load-node-server()
+  (interactive)
+  (save-buffer)
+  (ignore-errors (delete-process "node-subprocess"))
+  (let ((server-path "/Users/lbw/github_project/notes/app/javascript/Node/project/http-server/index.js"))
+    (make-process
+     :buffer "*Messages*"
+     :name "node-subprocess"
+     :command (list "node" server-path)
+     :filter (lambda (process output)
+	       (message output))
+     :sentinel (lambda (process event)
+		 (message event))
+     )))
+
+(global-set-key (kbd "C-z r") 'load-node-server)
+
+(delete-process
+(process-buffer  (get-process "node-subprocess"))
+(display-buffer "server.js")
+(process-filter (get-process "node-subprocess"))
+(process-send-string "shell" "ls\n")
+(process-send-eof "shell")
+
+;; 在新tab打开文件,如果文件已经打开，切换到那个文件
 (defun new-tab-to-open-the-file (file &optional wildcard)
   (interactive
     (find-file-read-args "Find file in other tab: "
@@ -21,17 +49,15 @@
 (global-set-key (kbd "C-z o") 'new-tab-to-open-the-file)
 
 
-(global-set-key (kbd "C-z n") 'acm-doc-scroll-up)
-(global-set-key (kbd "C-z p") 'acm-doc-scroll-down)
-(global-set-key (kbd "C-z t") 'acm-doc-toggle)
-
 ;; 通过外部命令行工具扩展
 (defun my-first-elisp-code ()
   (interactive)
   (message "%s" (shell-command-to-string "git status")))
 
+(defvar output-content "")
 (defun eaf-git-run (prompt command)
   (message prompt)
+  (setq output-content "")
   (save-window-excursion
     (let ((output-content ""))
       (make-process
