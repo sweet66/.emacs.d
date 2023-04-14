@@ -23,10 +23,10 @@ pip3 install epc orjson sexpdata==0.0.3 six
 npm install -g typescript-language-server typescript @volar/vue-language-server emmet-ls
 ln -s /Users/lbw/.nvm/versions/node/v16.13.0/lib/node_modules/typescript /usr/local/lib/node_modules/typescript // 如果使用了nvm，需要创建软连接，不然找不到
 ```
+> 注意sexpdata需要安装0.0.3版本，不然会报错
 
 5. Install ` popweb ` external dependencies
 ```
-pip3 install PyQt5
-pip3 install PyQtWebEngine
+pip3 install PyQt6
+pip3 install PyQt6-WebEngine
 ```
-> 注意sexpdata需要安装0.0.3版本，不然会报错
