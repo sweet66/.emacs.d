@@ -69,6 +69,7 @@
 	  (editorconfig-mode 1)
 
 	  (require 'init-popweb)
+	  (require 'init-neotree)
 	  
           ;; Restore session at last.
           ;; (require 'init-session)

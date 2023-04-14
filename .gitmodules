@@ -112,3 +112,6 @@
 [submodule "site-lisp/extensions/mind-wave"]
 	path = site-lisp/extensions/mind-wave
 	url = https://github.com/manateelazycat/mind-wave.git
+[submodule "site-lisp/extensions/emacs-neotree"]
+	path = site-lisp/extensions/emacs-neotree
+	url = https://github.com/jaypei/emacs-neotree
