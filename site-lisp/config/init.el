@@ -70,6 +70,7 @@
 
 	  (require 'init-eaf)
 	  (require 'init-popweb)
+	  (require 'init-neotree)
 	  
           ;; Restore session at last.
           ;; (require 'init-session)

@@ -115,3 +115,6 @@
 [submodule "site-lisp/extensions/emacs-application-framework"]
 	path = site-lisp/extensions/emacs-application-framework
 	url = https://github.com/emacs-eaf/emacs-application-framework
+[submodule "site-lisp/extensions/emacs-neotree"]
+	path = site-lisp/extensions/emacs-neotree
+	url = https://github.com/jaypei/emacs-neotree
