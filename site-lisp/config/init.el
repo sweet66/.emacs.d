@@ -68,6 +68,7 @@
 	  (require 'editorconfig)
 	  (editorconfig-mode 1)
 
+	  (require 'init-eaf)
 	  (require 'init-popweb)
 	  
           ;; Restore session at last.
