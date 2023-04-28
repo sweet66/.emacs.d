@@ -34,7 +34,7 @@ The test for presence of the car of ELT-CONS is done with `equal'."
                      ("\\.erb\\'" . web-mode)
                      ("\\.mustache\\'" . web-mode)
                      ("\\.jsx$" . web-mode)
-                     ("\\.tsx$" . web-mode)		     
+                     ("\\.tsx$" . web-mode)
                      ("\\.html?\\'" . web-mode)
                      ("\\.js.erb\\'" . js-mode)
                      ("\\.js$" . js-mode)
