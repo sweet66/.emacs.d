@@ -50,6 +50,8 @@
     (require 'init-line-number)
     ;; 自动补全
     (require 'init-lsp-bridge)
+    ;; 自动保存文件
+    (require 'init-auto-save)
     ;; 自动加载对应文件后缀的Mode
     (require 'init-mode)
     ;; 设置分组快捷键菜单
