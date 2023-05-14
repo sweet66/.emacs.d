@@ -115,3 +115,6 @@
 [submodule "site-lisp/extensions/emacs-neotree"]
 	path = site-lisp/extensions/emacs-neotree
 	url = https://github.com/jaypei/emacs-neotree
+[submodule "site-lisp/extensions/vertico"]
+	path = site-lisp/extensions/vertico
+	url = https://github.com/minad/vertico.git

@@ -54,6 +54,8 @@
     (require 'init-auto-save)
     ;; 自动加载对应文件后缀的Mode
     (require 'init-mode)
+    ;; 自动补全minbuffer
+    (require 'init-vertico)
     ;; 设置分组快捷键菜单
     (require 'init-one-key)
     ;; 按键绑定
