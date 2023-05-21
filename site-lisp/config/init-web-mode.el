@@ -10,3 +10,5 @@
 			    (setq web-mode-script-padding 0)
 			    (setq web-mode-style-padding 0)))
 
+
+(provide 'init-web-mode)
