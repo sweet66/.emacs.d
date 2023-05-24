@@ -3,19 +3,21 @@
   (interactive)
   (save-buffer)
   (cond ((derived-mode-p 'sh-mode)
+	 (message "fdsafds: %s" (buffer-file-name))
          (shell-command (format "bash %s" (buffer-file-name))))
 	((derived-mode-p 'js-mode)
-	 (shell-command (format "node %s" (buffer-file-name))))
+	 (load-node-server (buffer-file-name))
+	 )
     (t
       (load-file buffer-file-name))
     ))
 (global-set-key (kbd "C-z l") 'load-current-buffer)
 
-(defun load-node-server()
+(defun load-node-server(filePath)
   (interactive)
   (save-buffer)
   (ignore-errors (delete-process "node-subprocess"))
-  (let ((server-path "/Users/lbw/github_project/notes/app/javascript/Node/project/http-server/index.js"))
+  (let ((server-path filePath))
     (make-process
      :buffer "*Messages*"
      :name "node-subprocess"
