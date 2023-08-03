@@ -13,6 +13,19 @@
     ))
 (global-set-key (kbd "C-z l") 'load-current-buffer)
 
+
+(defun format-current-buffer ()
+  (interactive)
+  (save-buffer)  
+  (cond ((derived-mode-p 'web-mode)
+	 (message "format: %s" (buffer-file-name))
+         (shell-command (format "prettier -w %s" (buffer-file-name)))
+	 (revert-buffer nil t))
+    (t
+      (revert-buffer nil t))
+    ))
+(global-set-key (kbd "C-z f") 'format-current-buffer)
+
 (defun load-node-server(filePath)
   (interactive)
   (save-buffer)
