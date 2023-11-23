@@ -49,7 +49,7 @@
     ;; 行号设置
     (require 'init-line-number)
     ;; 自动补全
-    (require 'init-lsp-bridge)
+    ;; (require 'init-lsp-bridge)
     ;; 自动保存文件
     (require 'init-auto-save)
     ;; 自动加载对应文件后缀的Mode
@@ -75,6 +75,7 @@
 	  (require 'init-eaf)
 	  (require 'init-popweb)
 	  (require 'init-neotree)
+	  (require 'init-package)
 	  
           ;; Restore session at last.
           ;; (require 'init-session)

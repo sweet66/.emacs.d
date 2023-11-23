@@ -21,6 +21,10 @@
 	 (message "format: %s" (buffer-file-name))
          (shell-command (format "prettier -w %s" (buffer-file-name)))
 	 (revert-buffer nil t))
+((derived-mode-p 'json-mode)
+	 (message "format: %s" (buffer-file-name))
+         (shell-command (format "prettier -w %s" (buffer-file-name)))
+	 (revert-buffer nil t))	
     (t
       (revert-buffer nil t))
     ))
