@@ -94,8 +94,8 @@
     ("M-." . lsp-bridge-find-references) ;查找代码引用
     ("C-9" . lsp-bridge-popup-documentation) ;查看光标处的文档
     ("C-0" . lsp-bridge-rename) ;重命名
-    ;; ("M-s-j" . lsp-bridge-diagnostic-jump-next) ;显示下一个错误
-    ;; ("M-s-k" . lsp-bridge-diagnostic-jump-prev) ;显示上一个错误
+    ("M-s-j" . lsp-bridge-diagnostic-jump-next) ;显示下一个错误
+    ("M-s-k" . lsp-bridge-diagnostic-jump-prev) ;显示上一个错误
     ("M-s-l" . lsp-bridge-diagnostic-ignore)    ;忽略当前的错误
     ("M-s-u" . lsp-bridge-diagnostic-copy)      ;拷贝诊断信息
     ("M-s-n" . lsp-bridge-popup-documentation-scroll-up) ;向下滚动文档
