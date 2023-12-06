@@ -1,141 +1,3 @@
-;;; insert-translated-name.el --- Insert translated string as variable or function name  -*- lexical-binding: t; -*-
-
-;; Filename: insert-translated-name.el
-;; Description: Insert translated string as variable or function name
-;; Author: Andy Stewart <lazycat.manatee@gmail.com>
-;; Maintainer: Andy Stewart <lazycat.manatee@gmail.com>
-;; Copyright (C) 2018, Andy Stewart, all rights reserved.
-;; Created: 2018-09-22 10:54:16
-;; Version: 2.4
-;; Last-Updated: 2020-03-22 22:48:58
-;;           By: Andy Stewart
-;; URL: http://www.emacswiki.org/emacs/download/insert-translated-name.el
-;; Keywords:
-;; Compatibility: GNU Emacs 27.0.50
-;;
-;; Features that might be required by this library:
-;;
-;; `json' `subr-x'
-;;
-
-;;; This file is NOT part of GNU Emacs
-
-;;; License
-;;
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 3, or (at your option)
-;; any later version.
-
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with this program; see the file COPYING.  If not, write to
-;; the Free Software Foundation, Inc., 51 Franklin Street, Fifth
-;; Floor, Boston, MA 02110-1301, USA.
-
-;;; Commentary:
-;;
-;; Insert translated string as variable or function name
-;;
-
-;;; Installation:
-;;
-;; Put insert-translated-name.el to your load-path.
-;; The load-path is usually ~/elisp/.
-;; It's set in your ~/.emacs like this:
-;; (add-to-list 'load-path (expand-file-name "~/elisp"))
-;;
-;; And the following to your ~/.emacs startup file.
-;;
-;; (require 'insert-translated-name)
-;;
-;; No need more.
-
-;;; Customize:
-;;
-;; `insert-translated-name-translate-engine'
-;; `insert-translated-name-line-style-mode-list'
-;; `insert-translated-name-underline-style-mode-list'
-;; `insert-translated-name-camel-style-mode-list'
-;; `insert-translated-name-font-lock-mark-word'
-;;
-
-;;; Change log:
-;;
-;; 2020/03/22
-;;      * Use `default-input-method' instead pyim method.
-;;
-;; 2019/03/19
-;;      * Add css-mode in line style.
-;;
-;; 2019/03/16
-;;      * Don't print notify message if current cursor in minibuffer.
-;;
-;; 2019/02/20
-;;      * Add go-mode in `insert-translated-name-camel-style-mode-list'.
-;;
-;; 2019/01/29
-;;      * Add `inferior-emacs-lisp-mode' in `insert-translated-name-line-style-mode-list'.
-;;
-;; 2018/12/09
-;;      * Fix bug of `insert-translated-name-in-string-p' when cursor at left side of string.
-;;
-;; 2018/12/07
-;;      * Add `json' and `subr-x' depend.
-;;
-;; 2018/12/02
-;;      * Use `get-text-property' improve algorithm of `insert-translated-name-in-string-p' and `insert-translated-name-in-commit-p'
-;;
-;; 2018/12/01
-;;      * Add `insert-translated-name-origin-style-mode-list'.
-;;
-;; 2018/11/18
-;;      * Refacotry to remove duplicate variable.
-;;
-;; 2018/11/12
-;;      * Remove Mac color, use hex color instead.
-;;
-;; 2018/11/12
-;;      * Remove the function of continuous translation, it is not easy to use.
-;;
-;; 2018/09/26
-;;      * Add `insert-translated-name-use-original-translation'.
-;;      * Nothing happen if input word is empty.
-;;      * Make `insert-translated-name-insert' support prefix arg.
-;;
-;; 2018/09/25
-;;      * Add `insert-translated-name-in-commit-buffer-p' option to make english assistants available in magit.
-;;      * Make english assistants available in minibuffer.
-;;
-;; 2018/09/24
-;;      * Add option `insert-translated-name-translate-engine' and default use Google.
-;;      * Support pyim now.
-;;
-;; 2018/09/23
-;;      * Store placeholder in buffer local's hash instead insert placeholder uuid in buffer.
-;;      * Make `insert-translated-name-replace-*' functions support region.
-;;      * Call `insert-translated-name-insert-original-translation' when cursor in comment or string.
-;;
-;; 2018/09/22
-;;      * First released.
-;;      * Change query translation asynchronous, don't insert buffer if query duration more than 2 seconds.
-;;      * Use overlay as input way, and add `insert-translated-name-replace-*' functions.
-;;
-
-;;; Acknowledgements:
-;;
-;;
-;;
-
-;;; TODO
-;;
-;;
-;;
-
 ;;; Require
 (require 'json)
 (require 'subr-x)
@@ -169,6 +31,7 @@
 
 (defvar insert-translated-name-default-style "underline"
   "The default translation style, which can be set to \"origin\", \"line\", \"camel\" or \"underline\".")
+
 ;;;;;;;;;;;;;;;;;;;;; Interactive functions ;;;;;;;;;;;;;;;;;;;;;
 (defun insert-translated-name-insert (arg)
   (interactive "p")
@@ -617,5 +480,3 @@ QUERY-PARAMS must be an alist of field-value pairs."
     (insert-translated-name-update-translation-in-buffer word style translation insert-buffer placeholder)))
 
 (provide 'sweet-insert-translated-name)
-
-;;; insert-translated-name.el ends here

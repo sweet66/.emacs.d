@@ -1,24 +1,3 @@
-(delete-process
-(process-buffer  (get-process "node-subprocess"))
-(display-buffer "server.js")
-(process-filter (get-process "node-subprocess"))
-(process-send-string "shell" "ls\n")
-(process-send-eof "shell")
-
-;; 在新tab打开文件,如果文件已经打开，切换到那个文件
-(defun new-tab-to-open-the-file (file &optional wildcard)
-  (interactive
-    (find-file-read-args "Find file in other tab: "
-      (confirm-nonexistent-file-or-buffer)))
-  (let ((exist-buffer (cl-dolist (buffer (buffer-list))
-    (when (string-equal (expand-file-name file) (buffer-file-name buffer))
-      (tab-switch (buffer-name buffer))
-      (cl-return t)))))
-    (when (not exist-buffer)
-      (find-file-other-tab file))))
-(global-set-key (kbd "C-z o") 'new-tab-to-open-the-file)
-
-
 ;; 通过外部命令行工具扩展
 (defun my-first-elisp-code ()
   (interactive)
