@@ -70,6 +70,7 @@
           (require 'init-elisp-demos)
 	  (require 'init-markdown-mode)
 	  (require 'editorconfig)
+	  (require 'tool)
 	  (editorconfig-mode 1)
 
 	  (require 'init-eaf)

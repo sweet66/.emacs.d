@@ -616,6 +616,6 @@ QUERY-PARAMS must be an alist of field-value pairs."
     ;; Insert result with placeholder point.
     (insert-translated-name-update-translation-in-buffer word style translation insert-buffer placeholder)))
 
-(provide 'insert-translated-name)
+(provide 'sweet-insert-translated-name)
 
 ;;; insert-translated-name.el ends here
