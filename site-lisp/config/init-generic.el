@@ -1,5 +1,5 @@
 ;; Restore emacs session.
-(setq initial-buffer-choice t)
+(setq initial-buffer-choice nil)
 (run-with-timer 1 nil #'(lambda () (bury-buffer)))
 
 ;; 增加长行处理性能
