@@ -23,13 +23,13 @@
  'company 
  )
 
-(dolist (hook '(emacs-lisp-mode-hook lisp-interaction-mode-hook))
+(dolist (hook '(emacs-lisp-mode-hook lisp-interaction-mode-hook ielm-mode-hook))
   (add-hook hook
 	    (lambda ()
 	      (paredit-mode t)
+	      (company-mode t)
 	      (rainbow-delimiters-mode t)
 	      (show-paren-mode 1)
 	      )))
-
 
 (provide 'init-package)
