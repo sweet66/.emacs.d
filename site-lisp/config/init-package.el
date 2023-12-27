@@ -1,4 +1,4 @@
-(setq package-archives 
+(setq package-archives
       '(
 	("melpa" . "https://melpa.org/packages/")
 	("gun" . "http://elpa.gnu.org/packages/")
@@ -12,7 +12,6 @@
   (mapc (lambda (package)
 	  (unless (package-installed-p package)
 	    (package-install package)
-	    #'package-require
 	    ))
 	packs)
   )

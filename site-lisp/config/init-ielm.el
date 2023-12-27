@@ -1,4 +1,5 @@
 (require 'ielm)
+(require 'paredit)
 
 (defun ielm/clear-repl ()
   "Clear current REPL buffer."
