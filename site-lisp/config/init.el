@@ -77,6 +77,7 @@
 	  (require 'init-popweb)
 	  (require 'init-neotree)
 	  (require 'init-package)
+	  (require 'init-ielm)
 	  
           ;; Restore session at last.
           ;; (require 'init-session)

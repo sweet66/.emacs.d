@@ -28,3 +28,5 @@
 	    (kbd "C-c C-q")
 	    #'ielm/clear-repl
 	    )
+
+(provide 'init-ielm)
